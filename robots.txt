@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://fabiangunzinger.github.io/sitemap.xml

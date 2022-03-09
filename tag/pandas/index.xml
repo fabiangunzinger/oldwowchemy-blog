@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pandas | </title>
+    <link>https://fabiangunzinger.github.io/tag/pandas/</link>
+      <atom:link href="https://fabiangunzinger.github.io/tag/pandas/index.xml" rel="self" type="application/rss+xml" />
+    <description>pandas</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>pandas</title>
+      <link>https://fabiangunzinger.github.io/tag/pandas/</link>
+    </image>
+    
+    <item>
+      <title>Pandas categories</title>
+      <link>https://fabiangunzinger.github.io/post/pandas-categories/</link>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/pandas-categories/</guid>
+      <description> &lt;iframe
+       src=&#34;./pandas-categories.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;3300px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

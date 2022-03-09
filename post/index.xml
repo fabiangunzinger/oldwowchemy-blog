@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | Academic</title>
+    <title>Posts | </title>
     <link>https://fabiangunzinger.github.io/post/</link>
       <atom:link href="https://fabiangunzinger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 20 Feb 2022 14:52:07 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 08:02:01 +0000</lastBuildDate>
     <image>
       <url>https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
@@ -13,14 +13,112 @@
     </image>
     
     <item>
-      <title>Paradox</title>
+      <title>Dictionaries</title>
+      <link>https://fabiangunzinger.github.io/post/dictionaries/</link>
+      <pubDate>Mon, 28 Feb 2022 08:02:01 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/dictionaries/</guid>
+      <description> &lt;iframe
+       src=&#34;./dictionaries.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;4600px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Heaps</title>
+      <link>https://fabiangunzinger.github.io/post/heaps/</link>
+      <pubDate>Fri, 25 Feb 2022 08:32:49 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/heaps/</guid>
+      <description> &lt;iframe
+       src=&#34;./heaps.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;1000px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Iterators and generators</title>
+      <link>https://fabiangunzinger.github.io/post/iterators-and-generators/</link>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/iterators-and-generators/</guid>
+      <description> &lt;iframe
+       src=&#34;./iterators-and-generators.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;3800px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Entropy</title>
+      <link>https://fabiangunzinger.github.io/post/entropy/</link>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/entropy/</guid>
+      <description> &lt;iframe
+       src=&#34;./entropy.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;3000px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pandas categories</title>
+      <link>https://fabiangunzinger.github.io/post/pandas-categories/</link>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/pandas-categories/</guid>
+      <description> &lt;iframe
+       src=&#34;./pandas-categories.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;3300px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python tricks</title>
+      <link>https://fabiangunzinger.github.io/post/python-tricks/</link>
+      <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-tricks/</guid>
+      <description> &lt;iframe
+       src=&#34;./python-tricks.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;2000&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Idiomatic Python</title>
+      <link>https://fabiangunzinger.github.io/post/idiomatic-python/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/idiomatic-python/</guid>
+      <description> &lt;iframe
+       src=&#34;./idiomatic-python.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;2000&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The waiting time paradox</title>
       <link>https://fabiangunzinger.github.io/post/paradox/</link>
-      <pubDate>Sun, 20 Feb 2022 14:52:07 +0000</pubDate>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://fabiangunzinger.github.io/post/paradox/</guid>
       <description> &lt;iframe
        src=&#34;./waiting-time-paradox.html&#34;
        width=&#34;90%&#34;
-       height=&#34;1000px&#34;
+       height=&#34;10000&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>

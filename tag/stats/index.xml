@@ -26,5 +26,33 @@
 </description>
     </item>
     
+    <item>
+      <title>Machine learning basics</title>
+      <link>https://fabiangunzinger.github.io/post/machine-learning-basics/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/machine-learning-basics/</guid>
+      <description> &lt;iframe
+       src=&#34;./machine-learning-basics.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;9900px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes</title>
+      <link>https://fabiangunzinger.github.io/post/naive-bayes/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/naive-bayes/</guid>
+      <description> &lt;iframe
+       src=&#34;./naive-bayes.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;2100px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

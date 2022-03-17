@@ -13,12 +13,12 @@
     </image>
     
     <item>
-      <title>Dictionaries</title>
-      <link>https://fabiangunzinger.github.io/post/dictionaries/</link>
+      <title>Python dictionaries</title>
+      <link>https://fabiangunzinger.github.io/post/python-dictionaries/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      <guid>https://fabiangunzinger.github.io/post/dictionaries/</guid>
+      <guid>https://fabiangunzinger.github.io/post/python-dictionaries/</guid>
       <description> &lt;iframe
-       src=&#34;./dictionaries.html&#34;
+       src=&#34;./python-dictionaries.html&#34;
        width=&#34;90%&#34;
        height=&#34;6100px&#34;
        style=&#34;border:none;&#34;&gt;
@@ -83,6 +83,34 @@
     </item>
     
     <item>
+      <title>Python string formatting</title>
+      <link>https://fabiangunzinger.github.io/post/python-string-formatting/</link>
+      <pubDate>Wed, 22 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-string-formatting/</guid>
+      <description> &lt;iframe
+       src=&#34;./python-string-formatting.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;7000&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python regex</title>
+      <link>https://fabiangunzinger.github.io/post/python-regex/</link>
+      <pubDate>Sat, 11 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-regex/</guid>
+      <description> &lt;iframe
+       src=&#34;./python-regex.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;15400&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Python tricks</title>
       <link>https://fabiangunzinger.github.io/post/python-tricks/</link>
       <pubDate>Sat, 03 Jul 2021 00:00:00 +0000</pubDate>
@@ -91,6 +119,20 @@
        src=&#34;./python-tricks.html&#34;
        width=&#34;90%&#34;
        height=&#34;2200&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Numpy essentials</title>
+      <link>https://fabiangunzinger.github.io/post/numpy-essentials/</link>
+      <pubDate>Mon, 14 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/numpy-essentials/</guid>
+      <description> &lt;iframe
+       src=&#34;./numpy-essentials.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;13300px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>
@@ -111,6 +153,62 @@
     </item>
     
     <item>
+      <title>Python functions</title>
+      <link>https://fabiangunzinger.github.io/post/python-functions/</link>
+      <pubDate>Mon, 05 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-functions/</guid>
+      <description> &lt;iframe
+       src=&#34;./python-functions.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;10500&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Documenting sample selection</title>
+      <link>https://fabiangunzinger.github.io/post/documenting-sample-selection/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/documenting-sample-selection/</guid>
+      <description> &lt;iframe
+       src=&#34;./documenting-sample-selection.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;11000px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python decorators</title>
+      <link>https://fabiangunzinger.github.io/post/python-decorators/</link>
+      <pubDate>Wed, 30 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-decorators/</guid>
+      <description> &lt;iframe
+       src=&#34;./python-decorators.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;10000&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine learning basics</title>
+      <link>https://fabiangunzinger.github.io/post/machine-learning-basics/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/machine-learning-basics/</guid>
+      <description> &lt;iframe
+       src=&#34;./machine-learning-basics.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;9900px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The waiting time paradox</title>
       <link>https://fabiangunzinger.github.io/post/paradox/</link>
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
@@ -119,6 +217,20 @@
        src=&#34;./waiting-time-paradox.html&#34;
        width=&#34;90%&#34;
        height=&#34;11700&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Naive Bayes</title>
+      <link>https://fabiangunzinger.github.io/post/naive-bayes/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/naive-bayes/</guid>
+      <description> &lt;iframe
+       src=&#34;./naive-bayes.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;2100px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>

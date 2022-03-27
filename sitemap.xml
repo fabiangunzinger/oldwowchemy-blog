@@ -16,11 +16,23 @@
   <url>
     <loc>https://fabiangunzinger.github.io/post/heaps/</loc><lastmod>2022-02-25T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://fabiangunzinger.github.io/post/git/</loc><lastmod>2022-02-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/tag/tools/</loc><lastmod>2022-02-02T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://fabiangunzinger.github.io/post/iterators-and-generators/</loc><lastmod>2022-01-22T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/post/entropy/</loc><lastmod>2022-01-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/tag/stats/</loc><lastmod>2022-01-09T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/algorithm-complexity-analysis/</loc><lastmod>2021-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/tag/cs/</loc><lastmod>2021-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/tag/cheatsheet/</loc><lastmod>2021-11-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/regex/</loc><lastmod>2021-11-13T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/tag/pandas/</loc><lastmod>2021-11-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -30,9 +42,19 @@
   <url>
     <loc>https://fabiangunzinger.github.io/post/python-regex/</loc><lastmod>2021-09-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://fabiangunzinger.github.io/post/vim/</loc><lastmod>2021-09-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/makefiles/</loc><lastmod>2021-08-23T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/clean-code/</loc><lastmod>2021-07-22T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://fabiangunzinger.github.io/post/python-tricks/</loc><lastmod>2021-07-03T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://fabiangunzinger.github.io/post/modules-and-packages/</loc><lastmod>2021-05-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://fabiangunzinger.github.io/post/numpy-essentials/</loc><lastmod>2020-12-14T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/linux/</loc><lastmod>2020-11-21T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/post/idiomatic-python/</loc><lastmod>2020-11-03T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>

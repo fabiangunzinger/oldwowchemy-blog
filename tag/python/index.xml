@@ -34,7 +34,7 @@
       <description> &lt;iframe
        src=&#34;./heaps.html&#34;
        width=&#34;90%&#34;
-       height=&#34;2200px&#34;
+       height=&#34;3500px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>
@@ -93,6 +93,111 @@
        height=&#34;2200&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python modules and packages</title>
+      <link>https://fabiangunzinger.github.io/post/modules-and-packages/</link>
+      <pubDate>Fri, 21 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/modules-and-packages/</guid>
+      <description>&lt;h2 id=&#34;modules&#34;&gt;Modules&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A &lt;em&gt;module&lt;/em&gt; is a file that contains definitions intended for reuse in a script
+or an interactive session.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Calling &lt;code&gt;import module&lt;/code&gt; for the first time does three things: 1) create a new
+namespace that acts as the global namespace for all objects defined in module,
+2) execute the entire module, 3) create a name &amp;ndash; identical to the module name
+&amp;ndash; within the caller namespace that references to the module. This can be used
+to access module objects in the caller namespace as &lt;code&gt;module.object&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Calling &lt;code&gt;from module import symbol&lt;/code&gt; imports &lt;code&gt;symbol&lt;/code&gt; into the current
+namespace. However, the global namespace for &lt;code&gt;symbol&lt;/code&gt; (if it&amp;rsquo;s a function)
+always remains the namespace in which it was defined, not the caller&amp;rsquo;s
+namespace.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Regardless of what variant of the import statement is being used to import
+contents from a module, all of the module&amp;rsquo;s statements will be initialised the
+first time (and only the first time) the module name is encountered in an
+import statement (more details
+&lt;a href=&#34;https://docs.python.org/3/tutorial/modules.html#more-on-modules&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;One reason &lt;code&gt;from module import *&lt;/code&gt; is generally discouraged is that it directly
+imports all the module&amp;rsquo;s objects into the caller&amp;rsquo;s namespace, which is often
+said to cluter it up. Especially when importing large modules this makes
+sense, as it&amp;rsquo;s much cleaner to keep objects defined in imported modules in
+eponymous namespaces and accessing them via &lt;code&gt;module.object&lt;/code&gt;, which immediately
+makes clear where object comes from and can help greatly with debugging.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;One implication of all the above is that as a developer, you don&amp;rsquo;t have to
+worry about clashing variable names between modules, as they are each stored
+in their own namespace, and accessed via &lt;code&gt;moduleA.foo&lt;/code&gt; and &lt;code&gt;moduleB.foo&lt;/code&gt; in
+the caller namespace.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When we import a module &lt;code&gt;foo&lt;/code&gt;, the interpreter first searches for a built-in
+module and, if none is found, searches a list of directories given the
+variable &lt;code&gt;sys.path&lt;/code&gt;. &lt;code&gt;sys.path&lt;/code&gt; contains the directory of the input script,
+the variable &lt;code&gt;PYTHONPATH&lt;/code&gt;, and installation-dependent defaults. I can
+manipulate &lt;code&gt;sys.path&lt;/code&gt; using standard list operations; to add a directory, use
+&lt;code&gt;sys.path.append(&#39;dirname&#39;)&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A common usecase of the above for me is to make a package available to Jupyter
+Notebooks. By default, a notebook&amp;rsquo;s &lt;code&gt;sys.path&lt;/code&gt; contains the folder the noteook
+is located in and a bunch of conda managed directories linked to my running
+Conda environment. To make available a package that lives in the project root
+directory, just do
+&lt;code&gt;sys.path.append(&#39;/Users/fgu/dev/projectname/packagename&#39;)&lt;/code&gt;. I can then
+reference modules from the package using &lt;code&gt;from packagename import module&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use &lt;code&gt;dir(modulename)&lt;/code&gt; to list all names defined in &lt;code&gt;modulname&lt;/code&gt;, or &lt;code&gt;dir()&lt;/code&gt; to
+list all names that are currently defined.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;running-a-module-as-a-script&#34;&gt;Running a module as a script&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For relative imports to work as described, for instance, here and in Chapter 8
+in Python Essential References and in recipees 10.1 and 10.3 in the Python
+Cookbook, the file into which you import has itself to be a module rather than
+a top-level script. If it&amp;rsquo;s the latter, it&amp;rsquo;s name will be main and it won&amp;rsquo;t be
+considered part of a package, regardless of where on the file system it is
+saved. Generally, for a file to be considered part of a package, it needs to
+nave a dot (.) in its name, as in package.submodule.modulename.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To import modules into a main script, one (somewhat unideal) solution is to
+add the absolute path to the package to &lt;code&gt;sys.path&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;packages&#34;&gt;Packages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Packages are collections of modules. They help structure Python&amp;rsquo;s module
+namespace by using dotted module names. E.g. &lt;code&gt;a.b&lt;/code&gt; refers to submodule &lt;code&gt;b&lt;/code&gt; in
+package &lt;code&gt;a&lt;/code&gt;. Thus, just as the use of modules alleviates worries about
+clashing global variable names between modules, using a package alleviates
+worries about clashing module between multi-module packages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.python.org/3/tutorial/modules.html#executing-modules-as-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python docs -
+Modules&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/14132789/relative-imports-in-python-2-7/14132912#14132912&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SO answer on relative imports for
+scripts&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

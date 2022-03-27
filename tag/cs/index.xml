@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cs | </title>
+    <link>https://fabiangunzinger.github.io/tag/cs/</link>
+      <atom:link href="https://fabiangunzinger.github.io/tag/cs/index.xml" rel="self" type="application/rss+xml" />
+    <description>cs</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 21 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>cs</title>
+      <link>https://fabiangunzinger.github.io/tag/cs/</link>
+    </image>
+    
+    <item>
+      <title>Algorithm complexity analysis</title>
+      <link>https://fabiangunzinger.github.io/post/algorithm-complexity-analysis/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/algorithm-complexity-analysis/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The goal of algorithm analysis is to study the efficiency of an algorithm in
+a language and machine-independent way.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The two most important tools for this are (1) the RAM model of computation
+and (2) the asymptotic analysis of worst-case complexity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Random Access Machine (RAM) model of computation is a simple model of a
+generic computer that is based on three main assumptions: (1) each simple
+operation takes exactly one time step, (2) loops and subroutines are
+considered composites of all simple operations they perform, and (3) memory
+access from cache and RAM takes one time unit. None of these hold in
+practice, but the model is extremely useful because it captures the essence
+of algorithm behaviour while being very simple to work with.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Best, worst, and average-case complexity are functions defined by the
+minimum, maximum, and average number of steps taken for any instance of size
+&lt;em&gt;n&lt;/em&gt; of the input string. (Think about a graph with &lt;em&gt;n&lt;/em&gt; on the x-axis and &lt;em&gt;number
+of steps&lt;/em&gt; on the y-axis, with number of steps for each instance of a problem
+of size &lt;em&gt;n&lt;/em&gt; forming columns of dots with increasing variation as &lt;em&gt;n&lt;/em&gt; &amp;ndash; and
+thus the number of possible instances &amp;ndash; increases. The three functions trace
+the lowest, highest, and middle dots at each input size &lt;em&gt;n&lt;/em&gt;. See Fig 2.1 in
+ADM.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using these functions to analyse algorithms is impractical, however, because
+they are not smooth and require lots of detail about the algorithm and its
+implementation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Big O notation ignores such details and focuses on the essentials to capture
+the rate at which runtime (or space requirements) grow as a function of the
+input size (the letter O is used because the growth rate of a function is
+also called its order). In essence, this means only focusing on the higest
+order term and ignoring constants (which depend on things like hardware and
+programming language used to run the algorithm).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A function $f(n)$ is $O(g(n))$ if there exist constants $c$ and $n_0$ such
+that $f(n) \leq cg(n)$ for any $n &amp;gt; n_0$.  Intuitively, this means that
+$f(n)$ grows no faster than $cg(n)$ above a certain input size. For example:
+$T(n) = 2n^2 + 3n$ is $O(n^2)$, since $5n^2 \geq 2n^2 + 3n$ for all positive
+values of $n$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Amortised worse-case complexity takes into account that the running time of a
+given operation in an algorithm may take a very long or a very short time
+depending on the situation, and averages those different running times of the
+operation in a sequence over that sequence. Adding an element to an array
+that is dynamically resized takes $O(1)$ time until the array is full, when
+the array needs to create a new array of twice its original size, copy all
+elements over to the new array, and add the new element, which takes $O(n)$
+time. Average worst-case complexity averages these runtimes to find that
+pushing elements onto a dynamically resized array takes: $\frac{nO(1) +
+O(n)}{n + 1} = O(1)$, constant time.
+(&lt;a href=&#34;https://en.wikipedia.org/wiki/Amortized_analysis#Dynamic_array&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Source&lt;/a&gt;)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Exercises:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Is $2^{n+1} = O(2^n)$?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Is $(x + y)^2 = O(x^2 + y^2)$?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What&amp;rsquo;s the time complexity of $f(n) = min(n, 100)$?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Solutions:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The way to go is to start from the definition. The statement is true if
+there is a $c$ and $n_0$ for which $c2^n \geq 2^{n+1}$ for $n &amp;gt; n_0$. The key
+is to rewrite the right hand side to $c2^n \geq 2 \times 2^n$, which
+makes it obvious that the statement holds whenever $c \geq 2$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Starting from the definition, the statement is true if there exist constants
+$c$ and $n_0$ for which $c(x^2 + y^2) \geq (x + y)^2$ for $n &amp;gt; n_0$. Expanding
+the right hand side, we get $c(x^2 + y^2) \geq x^2 + 2xy + y^2$.
+Ignoring the middle term, the statement holds for $c = 1$; considering
+only the middle term, we see that it is largest when $x = y$, in which
+case the statement holds for $c = 2$. Thus, $3(x^2 + y^2) \geq (x +
+y)^2$, so the statement is true.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I reflexively answered $n$. Thinking for a moment (an embarassingly long
+one, admittedly), I realised that $n$ here refers not to the length of an
+array but to a single number. So the operation is $O(1)$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.algorist.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Steven Skiena, The Algorithm Design Manual (ADM)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://web.mit.edu/16.070/www/lecture/big_o.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT, Big O notation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Big_O_notation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia, Big O notation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Clean code</title>
+      <link>https://fabiangunzinger.github.io/post/clean-code/</link>
+      <pubDate>Thu, 22 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/clean-code/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;When people look under the hood, we want them to be impressed by the neatness,
+consistency, and attention to detail [&amp;hellip;] If instead they see a scrambled
+mass of code that looks like it was written by a bevy of drunken sailors, then
+they are likely to conclude that the same inattention to detail pervades every
+other aspect of the project. Robert Martin, &lt;em&gt;Clean Code&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;definitions&#34;&gt;Definitions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A design pattern is a general repeatable solution to a frequently occuring
+problem.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An idiom is the translation of a design pattern into code using the language
+clearly and correctly.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;principles&#34;&gt;Principles&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Don&amp;rsquo;t repeat yourself. Collect often used pieces of code in a function of
+class for reuse. Don&amp;rsquo;t copy and paste more than once.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Single Responsibility Principle (SRP): a class or module should only have a
+single reason to change &amp;ndash; it should be responsible to a single actor that can
+demand change. Example: an employee class that produces outputs for the
+finance and HR departments violates the principle, as both the CFO and the CHO
+might demand changes that then unintenionally affects the output seen by the
+other. Solution: Separate code that different actors depend on. Corollary:
+don&amp;rsquo;t reuse a function for two different outputs just because it does they
+require the same task, only reuse the function for two outputs that require
+the same task &lt;em&gt;and&lt;/em&gt; have a common owner. Example, don&amp;rsquo;t if both HR and finance
+need to calculate regular hours, don&amp;rsquo;t use the same function, as the CFO might
+want to change the definition of regular hours but HR doesn&amp;rsquo;t.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open-Closed Principle (OCP): classes should be open for extension and closed
+for modification. (We should easily be able to add new functionality without
+having to change existing functionality.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use names to make the context explicit (e.g. &amp;ldquo;for user in users&amp;rdquo; is explicit,
+&amp;ldquo;for i in list&amp;rdquo; isn&amp;rsquo;t).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Get to proof of concept asap.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&amp;ldquo;You ain&amp;rsquo;t gonna need it&amp;rdquo; (YAGNI). Don&amp;rsquo;t add functionality before it&amp;rsquo;s really
+necessary.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;names&#34;&gt;Names&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Choose names that make clear what a thing is, what it does, and how it is used.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use plain and unabbreviated words.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Omit needless words like &amp;ldquo;get&amp;rdquo; or &amp;ldquo;calculate&amp;rdquo;, but remember that &amp;ldquo;terseness
+and obscurity are the limits where brevity should
+&lt;a href=&#34;https://docs.python-guide.org/writing/structure/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stop&lt;/a&gt;&amp;rdquo;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use verbs or verb phrases for functions, nouns for classes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Choose names of variables in proportion to their scope.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Whenever appropriate, use names from the solution domain (e.g. computer or
+data science) or the problem domain (e.g. personal finance) otherwise.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;functions&#34;&gt;Functions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Functions should do one thing and one thing only and should do it well. (It&amp;rsquo;s
+not always obvious what &amp;ldquo;one thing&amp;rdquo; is, use your judgement.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Make functions as short as possible to make it obvious how they work and what
+they are for.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Most often, blocks inside flow control statements should be one line long -
+calls to transparently named functions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A good function interface allows the user to do what they need without having
+to worry about unnecessary details. Hence: ask for the minimally required
+number of intuitive arguments and return the expected output.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Write pure functions. A function is pure when it is idempotent (returns the
+same output for a given input) and has no side-effects.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;comments-and-docstrings&#34;&gt;Comments and docstrings&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Don&amp;rsquo;t comment bad code &amp;ndash; rewrite it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add docstrings to functions unless &amp;ndash; following
+&lt;a href=&#34;https://google.github.io/styleguide/pyguide.html#383-functions-and-methods&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google&lt;/a&gt;
+&amp;ndash; they are helpers, short and obvious.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;modules&#34;&gt;Modules&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Use the &lt;code&gt;module.function&lt;/code&gt; idiom (i.e. use &lt;code&gt;import module&lt;/code&gt; rather than &lt;code&gt;from module import function&lt;/code&gt;) in all but the simplest projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;systems&#34;&gt;Systems&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Kent Beck&amp;rsquo;s four rules for a simply designed system (in order or importance):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It runs all tests&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Contains no duplication&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Expresses the intent of the programmer (choose expressive names, keep
+functions and classes small, use standard nomenclature, good unit tests)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Minimises the number of classes and methods&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.oreilly.com/library/view/clean-code-a/9780136083238/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Clean Code&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.python-guide.org/writing/style/#code-style&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The Hitchhiker&amp;rsquo;s Guide to Python, code
+style&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/ipython-books/cookbook-2nd/blob/master/chapter02_best_practices/07_high_quality.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPython cookbook, writing high-quality Python
+code&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://google.github.io/styleguide/pyguide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google style guide&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://jeffknupp.com/blog/2018/10/11/write-better-python-functions/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jeff Knupp
+post&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://greenteapress.com/wp/think-python-2e/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Think Python&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

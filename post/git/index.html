@@ -1,0 +1,1206 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Fabian Gunzinger" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content=" " />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://fabiangunzinger.github.io/post/git/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.25fc9de39ceb731d249ee970a49347ca.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://fabiangunzinger.github.io/post/git/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@wowchemy" />
+    <meta property="twitter:creator" content="@wowchemy" />
+  
+  <meta property="og:site_name" content="" />
+  <meta property="og:url" content="https://fabiangunzinger.github.io/post/git/" />
+  <meta property="og:title" content="Git | " />
+  <meta property="og:description" content=" " /><meta property="og:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-02-02T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-02-02T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://fabiangunzinger.github.io/post/git/"
+  },
+  "headline": "Git",
+  
+  "datePublished": "2022-02-02T00:00:00Z",
+  "dateModified": "2022-02-02T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Fabian Gunzinger"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": " "
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Git | </title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a64b1b7c7f27ecc7e81c833938a437c9" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.ced4c4e0190cf57ce42494e355f2bdf6.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/research/"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Git</h1>
+
+  
+  <p class="page-subtitle">Notes and best-practices</p>
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Feb 2, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>My evolving notes and on how to effectively use Git and GitHub.</p>
+<h2 id="git">Git</h2>
+<ul>
+<li>
+<p>Evolution of version control systems (and their shortcomings): from having
+<strong>differently named files and folders</strong> (error prone and inefficient) to
+<strong>local version control systems (LVCs)</strong> where files are checked out from a
+locally hosted database that contains the entire history (single point of
+failure and impractical for collaboration) to <strong>centralized version control
+systems (CVCSs)</strong> where files are checked out from a server-hosted database
+(single point of failure) to <strong>distributed version control systems (DVCs)</strong>
+where files and a database containing the entire history are checked out from
+a served-hosted database, so that each local node contains all information
+stored on the server (content on server can easily be restored in case of
+failure).</p>
+</li>
+<li>
+<p>Git stores data as snapshots: at each new commit, modified files are replaced
+with a snapshot of their new state, while unmodified files are replaced with
+a link to the previous snapshot.</p>
+</li>
+<li>
+<p>In a basic workflow I edit a file in the <em>working tree</em> (the locally checked
+out version of the project), add them to the <em>staging area</em> (also called
+<em>index</em>), <em>commit</em> them to the local database, and finally push them to the
+remote database on GitHub.</p>
+</li>
+<li>
+<p>Neither <em>main</em> (or, formerly, <em>master</em>), nor <em>origin</em> have any special
+significance in Git. The reason they are widely used is that <em>main</em> is the
+default name for the starting branch when running <code>git init</code> and <em>origin</em> is
+the default name for the remote repository when running <code>git clone</code>.</p>
+</li>
+<li>
+<p>Git stores a single file as a
+<a href="https://en.wikipedia.org/wiki/Binary_large_object" target="_blank" rel="noopener">blob</a>, which is a
+<a href="https://en.wikipedia.org/wiki/Backronym" target="_blank" rel="noopener">backronym</a> for <em>binary large
+object</em> and is a collection of binary data. It can store any type of data
+including multimedia files and images. Blobs in the git object database are
+stored named with a SHA-1 hash key of their content and containing the <a href="https://stackoverflow.com/a/48959460/13666841" target="_blank" rel="noopener">exact
+same</a> content as the file
+would on my filesystem.</p>
+</li>
+</ul>
+<h2 id="interacting-with-remotes">Interacting with remotes</h2>
+<ul>
+<li>
+<p>A <em>remote repository</em> is a version of the project that&rsquo;s hosted on a server,
+in my case always on GitHub. The default name Git assigns to the remote when
+I clone it is <em>origin</em>. (Technically, the remote could also be hosted on my
+machine but in a separate location from my working copy.)</p>
+</li>
+<li>
+<p><code>git fetch &lt;remote&gt;</code> downloads all new objects from the remote repository
+(e.g.  including references to new branches) but does not automatically merge
+these objects into my local work. <code>git pull</code> fetches and automatically merges
+the remote version of the local branch I&rsquo;m currently on and merges it if the
+current branch is set up to track the remote. By default, <code>git clone</code> sets up
+my local <code>main</code> branch to track the remote version, named <code>origin/main</code>.</p>
+</li>
+<li>
+<p>To share work with the remote, I can use <code>git push &lt;remote&gt; &lt;branch&gt;</code> (e.g.
+to share work from my local <code>main</code> branch with <code>origin/main</code>, I can do <code>git push origin main</code>).</p>
+</li>
+</ul>
+<h2 id="undoing-things">Undoing things</h2>
+<ul>
+<li>
+<p>Cardinal rule: don&rsquo;t push stuff before you&rsquo;re fully happy with it. Changing
+your local history is easy, changing the history on the server isn&rsquo;t.</p>
+</li>
+<li>
+<p>Changing message of last commit: (with an empty index) run <code>git commit --amend</code>.</p>
+</li>
+<li>
+<p>Changing the content of the last commit: stage changes you want to add, then
+run <code>git commit --amend</code>. If you don&rsquo;t want to change the commit message,
+append <code>--no-edit</code>.</p>
+</li>
+<li>
+<p>Unstaging a staged file: <code>git restore --staged &lt;pathspec&gt;</code>.</p>
+</li>
+<li>
+<p>Undoing changes in the working directory and reverting a file to its state
+after the last commit: <code>git restore &lt;pathspec&gt;</code>.</p>
+</li>
+<li>
+<p>Changing multiple commits (edit, reorder, squash, delete, split,
+etc.): <code>git rebase -i HEAD~#</code>, where <code>#</code> is the parent of the last commit you
+want to edit (e.g. if you want to edit the last 3 commits, <code>HEAD~3</code> will
+select commits <code>HEAD</code>, <code>HEAD~1</code>, and <code>HEAD~2</code>). More in
+<a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History" target="_blank" rel="noopener">docs</a></p>
+</li>
+<li>
+<p>I&rsquo;ve accidentally overwritten a file with content I meant to place in a
+new file, and now want to 1) save the new content under a different name and
+2) restore the file I&rsquo;ve overwritten. Solution: Just save the new content
+under a new name (temporarily deleting the file I&rsquo;ve accidentally
+overwritten, and then use <code>git restore &lt;name_of_overwritten_file&gt;</code> to restore
+the old version of the overwritten file.</p>
+</li>
+<li>
+<p>I&rsquo;ve deleted one or more commits (e.g. by using a hard reset) that I need to
+recover. First thing to try: run <code>git reflog</code> to get a log of commits HEAD
+pointed to. Once I&rsquo;ve identified the commit I need (ab1af) I can create a new branch
+that points to it using <code>git branch recover-branch ab1af</code>. If there is no
+reflog, I can run <code>git fsck --full</code> to check the database for integrity and
+get a list of objects that aren&rsquo;t reacheable. The commit I&rsquo;m looking for will
+be labelled with <code>dangling commit</code>, and I can create a branch pointing to it.</p>
+</li>
+<li>
+<p>Removing a file from every commit (e.g. accidentally committed large data
+file): <code>git filter-branch --index-filter 'rm --ignore-unmatch --cached data.csv' HEAD</code>. This can take a long time. One way to speed things up is to
+find the commit that added the file to the history and only filter downstream
+from there. <code>git log --oneline --branches -- data.csv</code> will list all commits
+that contain the file from latest to earliest. If the file was added in
+commit <code>a34s5</code>, then I only want to rewrite commits <code>a34s5^..HEAD</code>, which I
+can substitute for <code>HEAD</code> in the <code>filter-branch</code> command. (In case I don&rsquo;t
+know the name of the large file I want to remove, see
+<a href="https://git-scm.com/book/en/v2/Git-Internals-Maintenance-and-Data-Recovery" target="_blank" rel="noopener">here</a>
+for how to find it. Finally, as advised in relevant section
+<a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History" target="_blank" rel="noopener">here</a>, it&rsquo;s best
+to first do this on a separate branch to test the behaviour before running it
+on <code>main</code>.</p>
+</li>
+</ul>
+<h2 id="frequently-used-stuff-and-best-practices">Frequently used stuff and best practices</h2>
+<ul>
+<li>
+<p>I&rsquo;ve made changes pertaining to two different issues in the same file. How do
+I commit them separately? Use the <code>--patch</code> option either with <code>git add</code> or
+<code>git commit</code>. This effectively opens the <code>patch</code> option of the interactive
+menue, which I could access using the <code>--interactive</code> option.</p>
+</li>
+<li>
+<p>I&rsquo;ve started to work on an issue I decide I don&rsquo;t want to work on yet but I
+want to save that work. Just
+<a href="https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning" target="_blank" rel="noopener">stash</a> the
+work.</p>
+</li>
+<li>
+<p>I&rsquo;m working on a topic branch and discover another issue I need to fix first.
+What to do?</p>
+</li>
+<li>
+<p>Create local version of remote branch that automatically tracks remote branch
+(if branch has unique remote counterpart): <code>git switch &lt;branch&gt;</code>.</p>
+</li>
+<li>
+<p>Reset vs restore vs revert vs rebase (docs
+<a href="https://git-scm.com/docs/git#_reset_restore_and_revert" target="_blank" rel="noopener">here</a>): <code>reset</code> is
+about updating your branch by adding or removing commits from the branch,
+<code>restore</code> is about unstading files from the index or undoing changes in the
+working directory, <code>reset</code> is about making new commits to undo changes made
+by other commits,
+<a href="https://git-scm.com/book/en/v2/Git-Branching-Rebasing#_rebase_peril" target="_blank" rel="noopener"><code>rebase</code></a>,
+like <code>merge</code>, is a way to integrate work from two different branches. But
+unlike <code>merge</code>, which takes the endpoints of two branches and merges them
+together, <code>rebase</code> applies changes from the branch you merge onto the branch
+you merge to in the order they happened and thus creates a linear history.</p>
+</li>
+</ul>
+<h2 id="understanding-reset">Understanding reset</h2>
+<ul>
+<li>
+<p>Think of <strong>HEAD</strong> as the last commit on the current branch (it&rsquo;s a pointer to
+the current branch which is a pointer to the last commit on that branch), the
+<strong>index</strong> as the proposed next commit, and the <strong>working directory</strong> as a
+sandbox. Think of all of them as collections of files, or file trees.</p>
+</li>
+<li>
+<p>When I switch to a branch, Git makes HEAD point to the new branch ref,
+populates the index with the snapshot of the last commit on that branch, and
+copies the contents of the index into the working directory.</p>
+</li>
+<li>
+<p>Changing a file updates it in the working directory, staging it updates the
+version in the index with that of the working directory, and committing it
+updates the version HEAD points to with that of the index.</p>
+</li>
+<li>
+<p><code>git reset --soft HEAD~</code> moves the branch that HEAD points to to the parent
+of the last commit. The version of the file that HEAD points to now differs
+from the versions in the index and the working directory, which still contain
+the version of the last commit on the branch. Effectively, we&rsquo;ve undone the
+last commit. You could now make changes to the index and then commit them,
+accomplishing the same as <code>git commit --amend</code>. So, <code>--soft</code> undoes <code>git commit</code>.</p>
+</li>
+<li>
+<p><code>git reset [--mixed] HEAD~</code> moves the branch HEAD points to (just as <code>--soft</code>
+above) but then also updates index with the content of the snapshot HEAD now
+points to. So, <code>--mixed</code> undoes <code>git commit</code> and <code>git add</code>.</p>
+</li>
+<li>
+<p><code>git reset --hard HEAD~</code>, does what the above does, but then continues and
+also updates the working directory with the content of the index. This
+forcibly overwrites files, which, if they haven&rsquo;t been committed (in which
+case they can be recovered using the reflog), is unrecoverable. So, <code>--hard</code>
+undoes <code>git commit</code>, <code>git add</code>, and all changes made in the working
+directory since the last commit.</p>
+</li>
+<li>
+<p>We can undo multiple commits: to undo all commits since commit <em>9e5bf</em>,
+simply run <code>git reset &lt;option&gt; 9e5bf</code>.</p>
+</li>
+<li>
+<p><code>reset</code> is also handy to squash commits together. To squash the last three
+unpushed commits, use <code>git reset --soft HEAD~3</code>. This moves the branch ref to
+the great-grandparent of the latest commit. Because the index remains
+unchanged, all changes committed after <code>HEAD~3</code> now appear as staged and can
+be committed in a single new commit.</p>
+</li>
+</ul>
+<h2 id="writing-good-commits">Writing good commits</h2>
+<ul>
+<li>
+<p>Writing good commits (more
+<a href="https://git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project" target="_blank" rel="noopener">here</a>):</p>
+<ol>
+<li>
+<p>No whitespace errors (<code>git diff --check</code>, probs integrated in <code>fugitive</code>
+somehow).</p>
+</li>
+<li>
+<p>Each commit is a logically separate changeset.</p>
+</li>
+<li>
+<p>Useful commit message using capitalisation and written in imperative style
+(&ldquo;Fix bug&rdquo; instead of &ldquo;Fixed bug&rdquo; or &ldquo;Fixes bug&rdquo;, to be compatible with Git&rsquo;s
+auto generated messages) comprising a short summary (no longer than 50
+characters so it fits on one line in log) followed by a blank line followed
+by a motivation for the changes and a description of the contrast between old
+and new behaviour.</p>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="selecting-commits">Selecting commits</h2>
+<ul>
+<li>
+<p><a href="https://git-scm.com/book/en/v2/Git-Tools-Revision-Selection" target="_blank" rel="noopener">Docs</a></p>
+</li>
+<li>
+<p>Short SHA-1 hashes: <code>git show d921</code> shows the commit with abbreviated SHA-1 hash <code>d921</code>.</p>
+</li>
+<li>
+<p>Branch references: <code>git show iss3</code> shows the commit on the tip of the branch
+<code>iss3</code>.</p>
+</li>
+<li>
+<p>Ancestry references: There are two different ways of ancestry selection which
+I think of as &ldquo;horizontal&rdquo; and &ldquo;vertical&rdquo; selection. <code>^</code> selects different
+parents for merge commits: <code>git show d921^</code> shows the first parent of the
+merge commit. By default, this parent is from the branch from which the merge
+was performed (frequently <code>main</code>). <code>git show d921^2</code> shows the second parent,
+which is from the branch that was merged. I think of this as horizontal
+ancestor selection.  Conversely, <code>~</code> performs vertical ancestor selection in
+that it iteratively selects the first parent a specified number of times.
+<code>git show d921~</code> shows the parent of <code>d921</code>, <code>git show d921~2</code> the parent of
+the parent, <code>git show d921~3</code> the parent of the parent of the parent, and so
+on (the previous could also be written as <code>git show d921~~~</code>). The two
+syntaxes can be combined: <code>git show d921~2^2</code> shows the second parent of the
+grandparent of <code>d921</code>, assuming the grandparent is a merge commit.</p>
+</li>
+<li>
+<p>Double dot: <code>git log main..iss3</code> lists all commits that are reachable from
+the <code>iss3</code> but not the <code>main</code> branch. Git substitues <code>HEAD</code> if one side of
+<code>..</code> is empty, so to list local commits that aren&rsquo;t yet on the remote, you
+could do <code>git log origin/main..</code>. Similarly, to select the last three
+commits, use <code>HEAD~3..HEAD</code>, which selects all commits reachable from <code>HEAD</code>
+but not <code>HEAD~3</code>, which are commits <code>HEAD~2</code>, <code>HEAD~</code>, and <code>HEAD</code>.</p>
+</li>
+<li>
+<p>Triple dot: to list commits that occur either on <code>master</code> or <code>iss3</code> but not
+both, I can do <code>git log master...iss3</code>, and to get arrows to indicate whether
+a commit is reachable from the right or left branch, <code>git log --left-right master...iss3</code>.</p>
+</li>
+</ul>
+<h2 id="misc">Misc.</h2>
+<ul>
+<li>To search for commit message in log history: <code>git log --grep='regex'</code></li>
+</ul>
+<h2 id="gitignore"><code>.gitignore</code></h2>
+<ul>
+<li>The section on ignoring files in
+<a href="http://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository" target="_blank" rel="noopener">this</a>
+ProGit book chapter is excellently clear and provides very useful examples.</li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/tools/">tools</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Fabian Gunzinger
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.79343bd00de25e04f03b6af2819f8643.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.f41ee09ba84b78e6bdd68fadc655c33f.js"></script>
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>

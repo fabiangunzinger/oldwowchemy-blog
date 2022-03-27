@@ -64,10 +64,10 @@
   
     
   
-  <meta name="description" content="  " />
+  <meta name="description" content="When people look under the hood, we want them to be impressed by the neatness, consistency, and attention to detail [&hellip;] If instead they see a scrambled mass of code that looks like it was written by a bevy of drunken sailors, then they are likely to conclude that the same inattention to detail pervades every other aspect of the project." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://fabiangunzinger.github.io/post/heaps/" />
+  <link rel="alternate" hreflang="en-us" href="https://fabiangunzinger.github.io/post/clean-code/" />
 
   
   
@@ -283,7 +283,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://fabiangunzinger.github.io/post/heaps/" />
+  <link rel="canonical" href="https://fabiangunzinger.github.io/post/clean-code/" />
 
   
   
@@ -309,18 +309,18 @@
     <meta property="twitter:creator" content="@wowchemy" />
   
   <meta property="og:site_name" content="" />
-  <meta property="og:url" content="https://fabiangunzinger.github.io/post/heaps/" />
-  <meta property="og:title" content="Heaps | " />
-  <meta property="og:description" content="  " /><meta property="og:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://fabiangunzinger.github.io/post/clean-code/" />
+  <meta property="og:title" content="Clean code | " />
+  <meta property="og:description" content="When people look under the hood, we want them to be impressed by the neatness, consistency, and attention to detail [&hellip;] If instead they see a scrambled mass of code that looks like it was written by a bevy of drunken sailors, then they are likely to conclude that the same inattention to detail pervades every other aspect of the project." /><meta property="og:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2022-02-25T00:00:00&#43;00:00"
+        content="2021-07-22T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2022-02-25T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-07-22T00:00:00&#43;00:00">
   
 
   
@@ -344,12 +344,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://fabiangunzinger.github.io/post/heaps/"
+    "@id": "https://fabiangunzinger.github.io/post/clean-code/"
   },
-  "headline": "Heaps",
+  "headline": "Clean code",
   
-  "datePublished": "2022-02-25T00:00:00Z",
-  "dateModified": "2022-02-25T00:00:00Z",
+  "datePublished": "2021-07-22T00:00:00Z",
+  "dateModified": "2021-07-22T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -364,7 +364,7 @@
       "url": "https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "  "
+  "description": "When people look under the hood, we want them to be impressed by the neatness, consistency, and attention to detail [\u0026hellip;] If instead they see a scrambled mass of code that looks like it was written by a bevy of drunken sailors, then they are likely to conclude that the same inattention to detail pervades every other aspect of the project."
 }
 </script>
 
@@ -380,11 +380,11 @@
 
 
 
-  <title>Heaps | </title>
+  <title>Clean code | </title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3a3855edffd2caf2158357c3201a7436" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="639fab6b12e2ca27bac5c46cfde40fe9" >
 
   
   
@@ -660,10 +660,10 @@
   
   
 <div class="article-container pt-3">
-  <h1>Heaps</h1>
+  <h1>Clean code</h1>
 
   
-  <p class="page-subtitle">Basics and practice</p>
+  <p class="page-subtitle">An evolving set of principles I try to adhere to</p>
   
 
   
@@ -681,7 +681,7 @@
     
       
     
-    Feb 25, 2022
+    Jul 22, 2021
   </span>
   
 
@@ -713,12 +713,168 @@
   <div class="article-container">
 
     <div class="article-style">
-       <iframe
-       src="./heaps.html"
-       width="90%"
-       height="3500px"
-       style="border:none;">
- </iframe>
+      <blockquote>
+<p>When people look under the hood, we want them to be impressed by the neatness,
+consistency, and attention to detail [&hellip;] If instead they see a scrambled
+mass of code that looks like it was written by a bevy of drunken sailors, then
+they are likely to conclude that the same inattention to detail pervades every
+other aspect of the project. Robert Martin, <em>Clean Code</em></p>
+</blockquote>
+<h2 id="definitions">Definitions</h2>
+<ul>
+<li>
+<p>A design pattern is a general repeatable solution to a frequently occuring
+problem.</p>
+</li>
+<li>
+<p>An idiom is the translation of a design pattern into code using the language
+clearly and correctly.</p>
+</li>
+</ul>
+<h2 id="principles">Principles</h2>
+<ul>
+<li>
+<p>Don&rsquo;t repeat yourself. Collect often used pieces of code in a function of
+class for reuse. Don&rsquo;t copy and paste more than once.</p>
+</li>
+<li>
+<p>Single Responsibility Principle (SRP): a class or module should only have a
+single reason to change &ndash; it should be responsible to a single actor that can
+demand change. Example: an employee class that produces outputs for the
+finance and HR departments violates the principle, as both the CFO and the CHO
+might demand changes that then unintenionally affects the output seen by the
+other. Solution: Separate code that different actors depend on. Corollary:
+don&rsquo;t reuse a function for two different outputs just because it does they
+require the same task, only reuse the function for two outputs that require
+the same task <em>and</em> have a common owner. Example, don&rsquo;t if both HR and finance
+need to calculate regular hours, don&rsquo;t use the same function, as the CFO might
+want to change the definition of regular hours but HR doesn&rsquo;t.</p>
+</li>
+<li>
+<p>Open-Closed Principle (OCP): classes should be open for extension and closed
+for modification. (We should easily be able to add new functionality without
+having to change existing functionality.)</p>
+</li>
+<li>
+<p>Use names to make the context explicit (e.g. &ldquo;for user in users&rdquo; is explicit,
+&ldquo;for i in list&rdquo; isn&rsquo;t).</p>
+</li>
+<li>
+<p>Get to proof of concept asap.</p>
+</li>
+<li>
+<p>&ldquo;You ain&rsquo;t gonna need it&rdquo; (YAGNI). Don&rsquo;t add functionality before it&rsquo;s really
+necessary.</p>
+</li>
+</ul>
+<h2 id="names">Names</h2>
+<ul>
+<li>
+<p>Choose names that make clear what a thing is, what it does, and how it is used.</p>
+</li>
+<li>
+<p>Use plain and unabbreviated words.</p>
+</li>
+<li>
+<p>Omit needless words like &ldquo;get&rdquo; or &ldquo;calculate&rdquo;, but remember that &ldquo;terseness
+and obscurity are the limits where brevity should
+<a href="https://docs.python-guide.org/writing/structure/" target="_blank" rel="noopener">stop</a>&rdquo;.</p>
+</li>
+<li>
+<p>Use verbs or verb phrases for functions, nouns for classes.</p>
+</li>
+<li>
+<p>Choose names of variables in proportion to their scope.</p>
+</li>
+<li>
+<p>Whenever appropriate, use names from the solution domain (e.g. computer or
+data science) or the problem domain (e.g. personal finance) otherwise.</p>
+</li>
+</ul>
+<h2 id="functions">Functions</h2>
+<ul>
+<li>
+<p>Functions should do one thing and one thing only and should do it well. (It&rsquo;s
+not always obvious what &ldquo;one thing&rdquo; is, use your judgement.)</p>
+</li>
+<li>
+<p>Make functions as short as possible to make it obvious how they work and what
+they are for.</p>
+</li>
+<li>
+<p>Most often, blocks inside flow control statements should be one line long -
+calls to transparently named functions.</p>
+</li>
+<li>
+<p>A good function interface allows the user to do what they need without having
+to worry about unnecessary details. Hence: ask for the minimally required
+number of intuitive arguments and return the expected output.</p>
+</li>
+<li>
+<p>Write pure functions. A function is pure when it is idempotent (returns the
+same output for a given input) and has no side-effects.</p>
+</li>
+</ul>
+<h2 id="comments-and-docstrings">Comments and docstrings</h2>
+<ul>
+<li>
+<p>Don&rsquo;t comment bad code &ndash; rewrite it.</p>
+</li>
+<li>
+<p>Add docstrings to functions unless &ndash; following
+<a href="https://google.github.io/styleguide/pyguide.html#383-functions-and-methods" target="_blank" rel="noopener">Google</a>
+&ndash; they are helpers, short and obvious.</p>
+</li>
+</ul>
+<h2 id="modules">Modules</h2>
+<ul>
+<li>Use the <code>module.function</code> idiom (i.e. use <code>import module</code> rather than <code>from module import function</code>) in all but the simplest projects.</li>
+</ul>
+<h2 id="systems">Systems</h2>
+<ul>
+<li>
+<p>Kent Beck&rsquo;s four rules for a simply designed system (in order or importance):</p>
+<ul>
+<li>
+<p>It runs all tests</p>
+</li>
+<li>
+<p>Contains no duplication</p>
+</li>
+<li>
+<p>Expresses the intent of the programmer (choose expressive names, keep
+functions and classes small, use standard nomenclature, good unit tests)</p>
+</li>
+<li>
+<p>Minimises the number of classes and methods</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li>
+<p><a href="https://www.oreilly.com/library/view/clean-code-a/9780136083238/" target="_blank" rel="noopener">Clean Code</a></p>
+</li>
+<li>
+<p><a href="https://docs.python-guide.org/writing/style/#code-style" target="_blank" rel="noopener">The Hitchhiker&rsquo;s Guide to Python, code
+style</a></p>
+</li>
+<li>
+<p><a href="https://github.com/ipython-books/cookbook-2nd/blob/master/chapter02_best_practices/07_high_quality.md" target="_blank" rel="noopener">IPython cookbook, writing high-quality Python
+code</a></p>
+</li>
+<li>
+<p><a href="https://google.github.io/styleguide/pyguide.html" target="_blank" rel="noopener">Google style guide</a></p>
+</li>
+<li>
+<p><a href="https://jeffknupp.com/blog/2018/10/11/write-better-python-functions/" target="_blank" rel="noopener">Jeff Knupp
+post</a></p>
+</li>
+<li>
+<p><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank" rel="noopener">Think Python</a></p>
+</li>
+</ul>
 
     </div>
 
@@ -729,7 +885,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/python/">python</a>
+  <a class="badge badge-light" href="/tag/cs/">cs</a>
   
 </div>
 

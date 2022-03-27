@@ -64,10 +64,10 @@
   
     
   
-  <meta name="description" content="  " />
+  <meta name="description" content="Getting help and finding stuff  man &lt;command&gt; opens the manual for &lt;command&gt;." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://fabiangunzinger.github.io/post/heaps/" />
+  <link rel="alternate" hreflang="en-us" href="https://fabiangunzinger.github.io/post/linux/" />
 
   
   
@@ -283,7 +283,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://fabiangunzinger.github.io/post/heaps/" />
+  <link rel="canonical" href="https://fabiangunzinger.github.io/post/linux/" />
 
   
   
@@ -309,18 +309,18 @@
     <meta property="twitter:creator" content="@wowchemy" />
   
   <meta property="og:site_name" content="" />
-  <meta property="og:url" content="https://fabiangunzinger.github.io/post/heaps/" />
-  <meta property="og:title" content="Heaps | " />
-  <meta property="og:description" content="  " /><meta property="og:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://fabiangunzinger.github.io/post/linux/" />
+  <meta property="og:title" content="Linux | " />
+  <meta property="og:description" content="Getting help and finding stuff  man &lt;command&gt; opens the manual for &lt;command&gt;." /><meta property="og:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2022-02-25T00:00:00&#43;00:00"
+        content="2020-11-21T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2022-02-25T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-11-21T00:00:00&#43;00:00">
   
 
   
@@ -344,12 +344,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://fabiangunzinger.github.io/post/heaps/"
+    "@id": "https://fabiangunzinger.github.io/post/linux/"
   },
-  "headline": "Heaps",
+  "headline": "Linux",
   
-  "datePublished": "2022-02-25T00:00:00Z",
-  "dateModified": "2022-02-25T00:00:00Z",
+  "datePublished": "2020-11-21T00:00:00Z",
+  "dateModified": "2020-11-21T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -364,7 +364,7 @@
       "url": "https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "  "
+  "description": "Getting help and finding stuff  man \u0026lt;command\u0026gt; opens the manual for \u0026lt;command\u0026gt;."
 }
 </script>
 
@@ -380,11 +380,11 @@
 
 
 
-  <title>Heaps | </title>
+  <title>Linux | </title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3a3855edffd2caf2158357c3201a7436" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="b92856abe38b1e5c1173e9e1ee6fd82c" >
 
   
   
@@ -660,10 +660,10 @@
   
   
 <div class="article-container pt-3">
-  <h1>Heaps</h1>
+  <h1>Linux</h1>
 
   
-  <p class="page-subtitle">Basics and practice</p>
+  <p class="page-subtitle">Cheetsheet</p>
   
 
   
@@ -681,7 +681,7 @@
     
       
     
-    Feb 25, 2022
+    Nov 21, 2020
   </span>
   
 
@@ -713,12 +713,149 @@
   <div class="article-container">
 
     <div class="article-style">
-       <iframe
-       src="./heaps.html"
-       width="90%"
-       height="3500px"
-       style="border:none;">
- </iframe>
+      <h2 id="getting-help-and-finding-stuff">Getting help and finding stuff</h2>
+<ul>
+<li><code>man &lt;command&gt;</code> opens the manual for <code>&lt;command&gt;</code>.</li>
+<li><code>man -k &lt;search term&gt;</code> lists all commands with <code>&lt;search term&gt;</code> in the manual
+pages.</li>
+<li>Search inside manual works as in vim.</li>
+</ul>
+<h2 id="basics">Basics</h2>
+<ul>
+<li>A process is a running instance of a program.</li>
+<li>Everything is a fiele (the keyboard is read-only, the screen write only)</li>
+</ul>
+<h2 id="misc-useful-stuff-i-use-often">Misc. useful stuff I use often</h2>
+<ul>
+<li>
+<p><code>ln -s [OPTIONS] FILE LINK</code>. Create a soft link for FILE at LINK. If you use
+<code>.</code> for LINK, a link with the same name as FILE will be created in the current
+location.</p>
+</li>
+<li>
+<p>In mac terminal, <code>pbcopy</code> and <code>pbpaste</code> allow you to copy from and paste to
+the terminal. I often use <code>pwd | pbcopy</code> to get a directory path for use
+elsewhere, and <code>pbpaste &gt; .gitignore</code> to create a gitignore file from a
+template (e.g. from gitignore.io).</p>
+</li>
+</ul>
+<h2 id="file-handling">File handling</h2>
+<ul>
+<li><code>file</code> lists file type of all files in a directory.</li>
+<li><code>wc</code> returns the number of words, lines, and bytes of the input file. Options
+-w, -l, -c return any one of those counts, -m returns the number of
+characters. (Remember difference between <code>wc -w &lt;filename&gt;</code> and <code>wc -w &lt; &lt;filename&gt;</code>: former prints file name, latter redirects file content to
+command anonymously, so prints result only.)</li>
+<li><code>cut</code> print certain columns of input file.</li>
+<li><code>sed</code> (stream edit) offers vim-like search and replace on data.</li>
+<li><code>uniq</code> removes duplicates from data.</li>
+<li><code>egrep</code> for regex-based filtering.</li>
+</ul>
+<h2 id="processes">Processes</h2>
+<ul>
+<li><code>top</code> to list most memory-intensive processes.</li>
+<li><code>ps</code> lists processes running in current terminal, use -aux option to print all
+running processes (use | grep to filter output).</li>
+<li><code>kill [signal] &lt;process id&gt;</code> to kill a process, use -9 signal to force if
+required.</li>
+<li><code>ctrl-z</code> to move current job to background, <code>jobs</code> to list running background
+jobs, <code>fg &lt;job id&gt;</code> to move job to foreground.</li>
+</ul>
+<h2 id="bash-scripting">Bash scripting</h2>
+<p>Variables</p>
+<ul>
+<li><code>'</code> interpret all content literally, <code>&quot;</code> allow for variable substitution.</li>
+<li><code>$( command )</code> saves command output into a variable.</li>
+<li><code>export var</code> makes <code>var</code> available to child process.</li>
+<li><code>/dev/stdin</code> reads input from pipe.</li>
+</ul>
+<p>Arithmetic</p>
+<ul>
+<li><code>let</code> assigns result of expression to a variable.</li>
+<li><code>expr</code> prints result of expression.</li>
+<li><code>$(( expression ))</code> returns the result of expression.</li>
+<li><code>${#var}</code> returns the length of <code>var</code> in characters.</li>
+</ul>
+<p>Functions</p>
+<ul>
+<li><code>function_name () { &lt;commands&gt; }</code>
+is the basic format (there is also <code>function function_name {</code>, but I prefer this.</li>
+</ul>
+<h2 id="permissions">Permissions</h2>
+<ul>
+<li>Three actions: <code>r</code> (read), <code>w</code> (write), <code>x</code> (execute).</li>
+<li>Three types of users: owner or user (u), group (g), and others (o). (a)
+applies to all types.</li>
+<li>Permission info is 10 characters long: first character is file type (<code>-</code> for
+file, <code>d</code> for directory), the remaining ones are rwx permissions for owner,
+group, and others, with letter indicating permission on, hyphen indicating
+permission off.</li>
+<li>Changing persmission: <code>chmod &lt;user type&gt;&lt;add or remove&gt;&lt;permission type&gt;</code>.
+User type defaults to a.  Example: <code>chmod g+w</code> adds write permission for
+group, <code>chmod u-x</code> removes execute permission for owner, <code>chmod a+rwx</code> grants
+all permission to everyone.  <code>chmod</code> stands for change file mode bits.</li>
+<li>Shortcuts: Remember the following:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Octal</th>
+<th>Binary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>000</td>
+</tr>
+<tr>
+<td>1</td>
+<td>001</td>
+</tr>
+<tr>
+<td>2</td>
+<td>010</td>
+</tr>
+<tr>
+<td>3</td>
+<td>011</td>
+</tr>
+<tr>
+<td>4</td>
+<td>100</td>
+</tr>
+<tr>
+<td>5</td>
+<td>101</td>
+</tr>
+<tr>
+<td>6</td>
+<td>110</td>
+</tr>
+<tr>
+<td>7</td>
+<td>111</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>This is useful because we can use the binary numbers to refer to rwx and the
+Octal ones as shortcuts (e.g. 5 is r-x). Further using the order of users as
+ugo, and using one Octal shortcut for each user, we can quickly set
+permissions for all users (e.g. 753 is rwxr-x-wx).</p>
+</li>
+<li>
+<p>Directory permissions: r means you can read content (e.g. do ls), w means you
+can write (e.g. create files or subdirectories), and x means you can enter
+(e.g. cd).</p>
+</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://ryanstutorials.net/bash-scripting-tutorial/" target="_blank" rel="noopener">Ryan&rsquo;s bash-scripting tutorial</a></li>
+<li><a href="https://ryanstutorials.net/bash-scripting-tutorial/" target="_blank" rel="noopener">Ryan&rsquo;s linux tutorial</a></li>
+</ul>
 
     </div>
 
@@ -729,7 +866,9 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/python/">python</a>
+  <a class="badge badge-light" href="/tag/tools/">tools</a>
+  
+  <a class="badge badge-light" href="/tag/cheatsheet/">cheatsheet</a>
   
 </div>
 

@@ -869,8 +869,8 @@ breaks, though, so the above pattern would match the string <em>\nu</em>.)</p>
 </li>
 <li>
 <p>Within a character class, metacharacters are literals with the exception of
-<em>^</em>, <em>-</em>, ** and <em>]</em> if they are used in places where they have special
-meaning: ^ at the beginning, <em>-</em> as part of a range, <em>]</em> at the end, and **
+<em>^</em>, <em>-</em>, <em>\</em> and <em>]</em> if they are used in places where they have special
+meaning: ^ at the beginning, <em>-</em> as part of a range, <em>]</em> at the end, and <em>\</em>
 to escape another special character or to form a token (i.e. always), and <em>]</em>
 at the end. Hence, this regex matches them all as literals: <code>[]\\-^]</code> (for
 details on how to includ metacharacters indide character classes without

@@ -5,12 +5,42 @@
     <link>https://fabiangunzinger.github.io/post/</link>
       <atom:link href="https://fabiangunzinger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 24 Apr 2022 09:02:49 +0100</lastBuildDate>
     <image>
       <url>https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://fabiangunzinger.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>Analysis Checklist</title>
+      <link>https://fabiangunzinger.github.io/post/analysis-checklist/</link>
+      <pubDate>Sun, 24 Apr 2022 09:02:49 +0100</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/analysis-checklist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post</title>
+      <link>https://fabiangunzinger.github.io/post/</link>
+      <pubDate>Tue, 19 Apr 2022 10:00:26 +0100</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R code snippets</title>
+      <link>https://fabiangunzinger.github.io/post/r-code-snippets/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/r-code-snippets/</guid>
+      <description> &lt;iframe
+       src=&#34;./r-code-snippets.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;6100px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Python dictionaries</title>
@@ -20,7 +50,7 @@
       <description> &lt;iframe
        src=&#34;./python-dictionaries.html&#34;
        width=&#34;90%&#34;
-       height=&#34;6100px&#34;
+       height=&#34;6700px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>
@@ -637,8 +667,8 @@ breaks, though, so the above pattern would match the string &lt;em&gt;\nu&lt;/em
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Within a character class, metacharacters are literals with the exception of
-&lt;em&gt;^&lt;/em&gt;, &lt;em&gt;-&lt;/em&gt;, ** and &lt;em&gt;]&lt;/em&gt; if they are used in places where they have special
-meaning: ^ at the beginning, &lt;em&gt;-&lt;/em&gt; as part of a range, &lt;em&gt;]&lt;/em&gt; at the end, and **
+&lt;em&gt;^&lt;/em&gt;, &lt;em&gt;-&lt;/em&gt;, &lt;em&gt;\&lt;/em&gt; and &lt;em&gt;]&lt;/em&gt; if they are used in places where they have special
+meaning: ^ at the beginning, &lt;em&gt;-&lt;/em&gt; as part of a range, &lt;em&gt;]&lt;/em&gt; at the end, and &lt;em&gt;\&lt;/em&gt;
 to escape another special character or to form a token (i.e. always), and &lt;em&gt;]&lt;/em&gt;
 at the end. Hence, this regex matches them all as literals: &lt;code&gt;[]\\-^]&lt;/code&gt; (for
 details on how to includ metacharacters indide character classes without
@@ -2164,6 +2194,14 @@ check whether one of Tim Pope&amp;rsquo;s plugins solves it).&lt;/p&gt;
 &lt;td&gt;&lt;code&gt;&amp;lt;c-k&amp;gt;-N&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Enter en dash in insert mode using digraphs&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;c-o-o&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;After opening vim, opens last file with cursor at last&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;edit&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;help&#34;&gt;Help&lt;/h2&gt;
@@ -2511,6 +2549,10 @@ uppercase.&lt;/li&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;O&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Insert in a new line above the current one&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;gi&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Insert at the end of last insert&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -5341,6 +5383,20 @@ can write (e.g. create files or subdirectories), and x means you can enter
     </item>
     
     <item>
+      <title>Matplotlib</title>
+      <link>https://fabiangunzinger.github.io/post/matplotlib/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/matplotlib/</guid>
+      <description> &lt;iframe
+       src=&#34;./matplotlib.html&#34;
+       width=&#34;100%&#34;
+       height=&#34;6700px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Machine learning basics</title>
       <link>https://fabiangunzinger.github.io/post/machine-learning-basics/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
@@ -5349,6 +5405,20 @@ can write (e.g. create files or subdirectories), and x means you can enter
        src=&#34;./machine-learning-basics.html&#34;
        width=&#34;90%&#34;
        height=&#34;9900px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python built-in heroes</title>
+      <link>https://fabiangunzinger.github.io/post/python-built-in-heroes/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-built-in-heroes/</guid>
+      <description> &lt;iframe
+       src=&#34;./python-built-in-heroes.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;10500px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>

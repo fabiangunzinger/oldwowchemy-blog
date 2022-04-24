@@ -20,7 +20,7 @@
       <description> &lt;iframe
        src=&#34;./python-dictionaries.html&#34;
        width=&#34;90%&#34;
-       height=&#34;6100px&#34;
+       height=&#34;6700px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>
@@ -252,6 +252,20 @@ scripts&lt;/a&gt;&lt;/p&gt;
        src=&#34;./python-decorators.html&#34;
        width=&#34;90%&#34;
        height=&#34;10000&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Python built-in heroes</title>
+      <link>https://fabiangunzinger.github.io/post/python-built-in-heroes/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-built-in-heroes/</guid>
+      <description> &lt;iframe
+       src=&#34;./python-built-in-heroes.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;10500px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
 </description>

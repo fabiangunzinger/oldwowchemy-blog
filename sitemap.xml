@@ -4,15 +4,23 @@
   
   
   <url>
-    <loc>https://fabiangunzinger.github.io/</loc><lastmod>2022-02-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://fabiangunzinger.github.io/</loc><lastmod>2022-04-24T09:02:49+01:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://fabiangunzinger.github.io/post/</loc><lastmod>2022-02-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://fabiangunzinger.github.io/post/analysis-checklist/</loc><lastmod>2022-04-24T09:02:49+01:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/</loc><lastmod>2022-04-24T09:02:49+01:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/</loc><lastmod>2022-04-19T10:00:26+01:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/tag/r/</loc><lastmod>2022-04-19T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/r-code-snippets/</loc><lastmod>2022-04-19T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/tags/</loc><lastmod>2022-04-19T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/tag/python/</loc><lastmod>2022-02-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/post/python-dictionaries/</loc><lastmod>2022-02-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://fabiangunzinger.github.io/tags/</loc><lastmod>2022-02-28T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/post/heaps/</loc><lastmod>2022-02-25T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -66,7 +74,13 @@
   <url>
     <loc>https://fabiangunzinger.github.io/post/python-decorators/</loc><lastmod>2020-09-30T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://fabiangunzinger.github.io/tag/dataviz/</loc><lastmod>2020-08-03T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/matplotlib/</loc><lastmod>2020-08-03T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://fabiangunzinger.github.io/post/machine-learning-basics/</loc><lastmod>2020-04-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://fabiangunzinger.github.io/post/python-built-in-heroes/</loc><lastmod>2020-03-22T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://fabiangunzinger.github.io/post/paradox/</loc><lastmod>2020-01-14T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>

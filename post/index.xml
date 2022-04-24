@@ -21,28 +21,6 @@
     </item>
     
     <item>
-      <title>Post</title>
-      <link>https://fabiangunzinger.github.io/post/</link>
-      <pubDate>Tue, 19 Apr 2022 10:00:26 +0100</pubDate>
-      <guid>https://fabiangunzinger.github.io/post/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R code snippets</title>
-      <link>https://fabiangunzinger.github.io/post/r-code-snippets/</link>
-      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>https://fabiangunzinger.github.io/post/r-code-snippets/</guid>
-      <description> &lt;iframe
-       src=&#34;./r-code-snippets.html&#34;
-       width=&#34;90%&#34;
-       height=&#34;6100px&#34;
-       style=&#34;border:none;&#34;&gt;
- &lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Python dictionaries</title>
       <link>https://fabiangunzinger.github.io/post/python-dictionaries/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>

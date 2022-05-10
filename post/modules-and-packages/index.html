@@ -690,7 +690,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    4 min read
   </span>
   
 
@@ -803,6 +803,45 @@ namespace by using dotted module names. E.g. <code>a.b</code> refers to submodul
 package <code>a</code>. Thus, just as the use of modules alleviates worries about
 clashing global variable names between modules, using a package alleviates
 worries about clashing module between multi-module packages.</li>
+</ul>
+<h3 id="example-creating-utility-package">Example: creating utility package</h3>
+<p>Utils repo:</p>
+<ul>
+<li>
+<p>If you want to publish to PyPI, choose name that doesn&rsquo;t exist yet.</p>
+</li>
+<li>
+<p>Create virtual environment <code>pyenv virtualenv 3.9 futils</code> and activate
+venv <code>pyenv activate futils</code>.</p>
+</li>
+<li>
+<p>Create project folder with Poetry for nice default setup <code>poetry new projectname</code> but rename <code>projectname</code> subdirectory to <code>src</code> because of
+<a href="https://hynek.me/articles/testing-packaging/" target="_blank" rel="noopener">this</a> blog post.</p>
+</li>
+<li>
+<p>Install required dependencies <code>poetry add pandas numpy seaborn</code> and
+development dependencies <code>poetry add --dev ipykernel</code>.</p>
+</li>
+<li>
+<p>Can reinstall dependencies using <code>poetry install</code>.</p>
+</li>
+<li>
+<p>Publish project to private server: <code>poetry publish -r reponame</code>. &ndash; currently
+not working, getting 403 forbidden error</p>
+</li>
+</ul>
+<p>Project repo:</p>
+<ul>
+<li>Install</li>
+</ul>
+<h2 id="todo">todo</h2>
+<ul>
+<li>
+<p>Automatic git credentials reading when publishing package</p>
+</li>
+<li>
+<p>Remove pyenv prompt warning message</p>
+</li>
 </ul>
 <h2 id="sources">Sources</h2>
 <ul>

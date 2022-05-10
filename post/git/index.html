@@ -842,12 +842,6 @@ on <code>main</code>.</p>
 <h2 id="frequently-used-stuff-and-best-practices">Frequently used stuff and best practices</h2>
 <ul>
 <li>
-<p>I&rsquo;ve made changes pertaining to two different issues in the same file. How do
-I commit them separately? Use the <code>--patch</code> option either with <code>git add</code> or
-<code>git commit</code>. This effectively opens the <code>patch</code> option of the interactive
-menue, which I could access using the <code>--interactive</code> option.</p>
-</li>
-<li>
 <p>I&rsquo;ve started to work on an issue I decide I don&rsquo;t want to work on yet but I
 want to save that work. Just
 <a href="https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning" target="_blank" rel="noopener">stash</a> the
@@ -873,6 +867,23 @@ like <code>merge</code>, is a way to integrate work from two different branches.
 unlike <code>merge</code>, which takes the endpoints of two branches and merges them
 together, <code>rebase</code> applies changes from the branch you merge onto the branch
 you merge to in the order they happened and thus creates a linear history.</p>
+</li>
+<li>
+<p>Adding a local repository to GitHub:</p>
+<ol>
+<li>
+<p>Initialise the local repo as a Git repository: <code>git init</code>.</p>
+</li>
+<li>
+<p>Add and commit all content of the local repo: <code>git add --all; git commit -m 'Intial commit'</code>.</p>
+</li>
+<li>
+<p>Create a GitHub repo and follow prompts: <code>gh repo create</code>.</p>
+</li>
+<li>
+<p>Done.</p>
+</li>
+</ol>
 </li>
 </ul>
 <h2 id="understanding-reset">Understanding reset</h2>

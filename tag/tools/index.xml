@@ -146,12 +146,6 @@ on &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;frequently-used-stuff-and-best-practices&#34;&gt;Frequently used stuff and best practices&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;I&amp;rsquo;ve made changes pertaining to two different issues in the same file. How do
-I commit them separately? Use the &lt;code&gt;--patch&lt;/code&gt; option either with &lt;code&gt;git add&lt;/code&gt; or
-&lt;code&gt;git commit&lt;/code&gt;. This effectively opens the &lt;code&gt;patch&lt;/code&gt; option of the interactive
-menue, which I could access using the &lt;code&gt;--interactive&lt;/code&gt; option.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;I&amp;rsquo;ve started to work on an issue I decide I don&amp;rsquo;t want to work on yet but I
 want to save that work. Just
 &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stash&lt;/a&gt; the
@@ -177,6 +171,23 @@ like &lt;code&gt;merge&lt;/code&gt;, is a way to integrate work from two differe
 unlike &lt;code&gt;merge&lt;/code&gt;, which takes the endpoints of two branches and merges them
 together, &lt;code&gt;rebase&lt;/code&gt; applies changes from the branch you merge onto the branch
 you merge to in the order they happened and thus creates a linear history.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adding a local repository to GitHub:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Initialise the local repo as a Git repository: &lt;code&gt;git init&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add and commit all content of the local repo: &lt;code&gt;git add --all; git commit -m &#39;Intial commit&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a GitHub repo and follow prompts: &lt;code&gt;gh repo create&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Done.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;understanding-reset&#34;&gt;Understanding reset&lt;/h2&gt;

@@ -174,12 +174,6 @@ on &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;frequently-used-stuff-and-best-practices&#34;&gt;Frequently used stuff and best practices&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;I&amp;rsquo;ve made changes pertaining to two different issues in the same file. How do
-I commit them separately? Use the &lt;code&gt;--patch&lt;/code&gt; option either with &lt;code&gt;git add&lt;/code&gt; or
-&lt;code&gt;git commit&lt;/code&gt;. This effectively opens the &lt;code&gt;patch&lt;/code&gt; option of the interactive
-menue, which I could access using the &lt;code&gt;--interactive&lt;/code&gt; option.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
 &lt;p&gt;I&amp;rsquo;ve started to work on an issue I decide I don&amp;rsquo;t want to work on yet but I
 want to save that work. Just
 &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stash&lt;/a&gt; the
@@ -205,6 +199,23 @@ like &lt;code&gt;merge&lt;/code&gt;, is a way to integrate work from two differe
 unlike &lt;code&gt;merge&lt;/code&gt;, which takes the endpoints of two branches and merges them
 together, &lt;code&gt;rebase&lt;/code&gt; applies changes from the branch you merge onto the branch
 you merge to in the order they happened and thus creates a linear history.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adding a local repository to GitHub:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Initialise the local repo as a Git repository: &lt;code&gt;git init&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add and commit all content of the local repo: &lt;code&gt;git add --all; git commit -m &#39;Intial commit&#39;&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a GitHub repo and follow prompts: &lt;code&gt;gh repo create&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Done.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;understanding-reset&#34;&gt;Understanding reset&lt;/h2&gt;
@@ -5116,6 +5127,45 @@ namespace by using dotted module names. E.g. &lt;code&gt;a.b&lt;/code&gt; refers
 package &lt;code&gt;a&lt;/code&gt;. Thus, just as the use of modules alleviates worries about
 clashing global variable names between modules, using a package alleviates
 worries about clashing module between multi-module packages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-creating-utility-package&#34;&gt;Example: creating utility package&lt;/h3&gt;
+&lt;p&gt;Utils repo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If you want to publish to PyPI, choose name that doesn&amp;rsquo;t exist yet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create virtual environment &lt;code&gt;pyenv virtualenv 3.9 futils&lt;/code&gt; and activate
+venv &lt;code&gt;pyenv activate futils&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create project folder with Poetry for nice default setup &lt;code&gt;poetry new projectname&lt;/code&gt; but rename &lt;code&gt;projectname&lt;/code&gt; subdirectory to &lt;code&gt;src&lt;/code&gt; because of
+&lt;a href=&#34;https://hynek.me/articles/testing-packaging/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt; blog post.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Install required dependencies &lt;code&gt;poetry add pandas numpy seaborn&lt;/code&gt; and
+development dependencies &lt;code&gt;poetry add --dev ipykernel&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Can reinstall dependencies using &lt;code&gt;poetry install&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Publish project to private server: &lt;code&gt;poetry publish -r reponame&lt;/code&gt;. &amp;ndash; currently
+not working, getting 403 forbidden error&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Project repo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;todo&#34;&gt;todo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Automatic git credentials reading when publishing package&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove pyenv prompt warning message&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
 &lt;ul&gt;

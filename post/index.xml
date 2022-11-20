@@ -21,14 +21,6 @@
     </item>
     
     <item>
-      <title>Experiments</title>
-      <link>https://fabiangunzinger.github.io/post/experiments/</link>
-      <pubDate>Mon, 13 Jun 2022 08:05:54 +0100</pubDate>
-      <guid>https://fabiangunzinger.github.io/post/experiments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Python dictionaries</title>
       <link>https://fabiangunzinger.github.io/post/python-dictionaries/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
@@ -185,6 +177,11 @@ for how to find it. Finally, as advised in relevant section
 &lt;a href=&#34;https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;, it&amp;rsquo;s best
 to first do this on a separate branch to test the behaviour before running it
 on &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Undoing a (pushed) commit: &lt;code&gt;git revert &amp;lt;commit_hash&amp;gt;&lt;/code&gt;. Creates a new commit
+undoing the specified commit. To undo a range of commits, use &lt;code&gt;git revert &amp;lt;oldest_commit_hash&amp;gt;..&amp;lt;latest_commit_hash&amp;gt;&lt;/code&gt;. (More
+&lt;a href=&#34;https://stackoverflow.com/a/22683231&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;frequently-used-stuff-and-best-practices&#34;&gt;Frequently used stuff and best practices&lt;/h2&gt;
@@ -2128,6 +2125,10 @@ file.&lt;/p&gt;
 &lt;h2 id=&#34;reminders&#34;&gt;Reminders&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;git-gutter: &lt;code&gt;]h&lt;/code&gt; and &lt;code&gt;[h&lt;/code&gt; to jump to next and previous hunk, &lt;code&gt;&amp;lt;leader&amp;gt;hs&lt;/code&gt; and
+&lt;code&gt;&amp;lt;leader&amp;gt;hu&lt;/code&gt; to stage and unstage hunk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;Use one keystroke to move and one to execute (e.g. the dot-formula).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -3179,8 +3180,7 @@ same buffer, or load multiple buffers into one window.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;I use &lt;code&gt;command-t&lt;/code&gt; to fuzzy-find files, which is what I use most of the time
-when working inside a project. I used &lt;code&gt;ctrl-p&lt;/code&gt; before and prefer some of the
-mappings, hence my repammings.&lt;/p&gt;
+when working inside a project.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;To navigate file trees, I use &lt;code&gt;netrw&lt;/code&gt; and &lt;code&gt;vinegar&lt;/code&gt;.&lt;/p&gt;
@@ -4716,6 +4716,20 @@ use &lt;code&gt;nmap &amp;lt;leader&amp;gt;t &amp;lt;plug&amp;gt;(test)&lt;/code
 clearly.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+&lt;h3 id=&#34;command-t-ruby-version-differs-from-expected&#34;&gt;Command-t ruby version differs from expected&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Error mesassage: &amp;ldquo;command-t cound not load the C extension &amp;hellip; VIM RUBY
+version (version number) Expected version (different version number).&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Solution: recompile Command-T with the new system Ruby. Steps are detailed
+under &amp;ldquo;Compiling Command-T&amp;rdquo; in the Command-T helpfiles. They are as follows:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd~/.config/nvin/plugged/command-t/ruby/command-t/ext/command-t&lt;/code&gt;
+&lt;code&gt;ruby extconf.rb&lt;/code&gt;
+&lt;code&gt;make&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;css-indent-not-working&#34;&gt;CSS indent not working&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;

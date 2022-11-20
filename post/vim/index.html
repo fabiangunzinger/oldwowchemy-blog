@@ -690,7 +690,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    29 min read
+    30 min read
   </span>
   
 
@@ -732,6 +732,10 @@ file.</p>
 </ul>
 <h2 id="reminders">Reminders</h2>
 <ul>
+<li>
+<p>git-gutter: <code>]h</code> and <code>[h</code> to jump to next and previous hunk, <code>&lt;leader&gt;hs</code> and
+<code>&lt;leader&gt;hu</code> to stage and unstage hunk.</p>
+</li>
 <li>
 <p>Use one keystroke to move and one to execute (e.g. the dot-formula).</p>
 </li>
@@ -1784,8 +1788,7 @@ same buffer, or load multiple buffers into one window.</p>
 <ul>
 <li>
 <p>I use <code>command-t</code> to fuzzy-find files, which is what I use most of the time
-when working inside a project. I used <code>ctrl-p</code> before and prefer some of the
-mappings, hence my repammings.</p>
+when working inside a project.</p>
 </li>
 <li>
 <p>To navigate file trees, I use <code>netrw</code> and <code>vinegar</code>.</p>
@@ -3321,6 +3324,20 @@ use <code>nmap &lt;leader&gt;t &lt;plug&gt;(test)</code>.
 clearly.</li>
 </ul>
 <h2 id="troubleshooting">Troubleshooting</h2>
+<h3 id="command-t-ruby-version-differs-from-expected">Command-t ruby version differs from expected</h3>
+<ul>
+<li>
+<p>Error mesassage: &ldquo;command-t cound not load the C extension &hellip; VIM RUBY
+version (version number) Expected version (different version number).&rdquo;</p>
+</li>
+<li>
+<p>Solution: recompile Command-T with the new system Ruby. Steps are detailed
+under &ldquo;Compiling Command-T&rdquo; in the Command-T helpfiles. They are as follows:</p>
+<p><code>cd~/.config/nvin/plugged/command-t/ruby/command-t/ext/command-t</code>
+<code>ruby extconf.rb</code>
+<code>make</code>.</p>
+</li>
+</ul>
 <h3 id="css-indent-not-working">CSS indent not working</h3>
 <ul>
 <li>

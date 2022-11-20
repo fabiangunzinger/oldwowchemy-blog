@@ -1590,6 +1590,10 @@ file.&lt;/p&gt;
 &lt;h2 id=&#34;reminders&#34;&gt;Reminders&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
+&lt;p&gt;git-gutter: &lt;code&gt;]h&lt;/code&gt; and &lt;code&gt;[h&lt;/code&gt; to jump to next and previous hunk, &lt;code&gt;&amp;lt;leader&amp;gt;hs&lt;/code&gt; and
+&lt;code&gt;&amp;lt;leader&amp;gt;hu&lt;/code&gt; to stage and unstage hunk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
 &lt;p&gt;Use one keystroke to move and one to execute (e.g. the dot-formula).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -2641,8 +2645,7 @@ same buffer, or load multiple buffers into one window.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;I use &lt;code&gt;command-t&lt;/code&gt; to fuzzy-find files, which is what I use most of the time
-when working inside a project. I used &lt;code&gt;ctrl-p&lt;/code&gt; before and prefer some of the
-mappings, hence my repammings.&lt;/p&gt;
+when working inside a project.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;To navigate file trees, I use &lt;code&gt;netrw&lt;/code&gt; and &lt;code&gt;vinegar&lt;/code&gt;.&lt;/p&gt;
@@ -4178,6 +4181,20 @@ use &lt;code&gt;nmap &amp;lt;leader&amp;gt;t &amp;lt;plug&amp;gt;(test)&lt;/code
 clearly.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+&lt;h3 id=&#34;command-t-ruby-version-differs-from-expected&#34;&gt;Command-t ruby version differs from expected&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Error mesassage: &amp;ldquo;command-t cound not load the C extension &amp;hellip; VIM RUBY
+version (version number) Expected version (different version number).&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Solution: recompile Command-T with the new system Ruby. Steps are detailed
+under &amp;ldquo;Compiling Command-T&amp;rdquo; in the Command-T helpfiles. They are as follows:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd~/.config/nvin/plugged/command-t/ruby/command-t/ext/command-t&lt;/code&gt;
+&lt;code&gt;ruby extconf.rb&lt;/code&gt;
+&lt;code&gt;make&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;css-indent-not-working&#34;&gt;CSS indent not working&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;

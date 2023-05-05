@@ -18,6 +18,18 @@
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://fabiangunzinger.github.io/post/git/</guid>
       <description>&lt;p&gt;My evolving notes and on how to effectively use Git and GitHub.&lt;/p&gt;
+&lt;h2 id=&#34;workflow&#34;&gt;Workflow&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I code in Neovim in the terminal, within tmux sessions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://github.com/airblade/vim-gitgutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;gitgutter&lt;/code&gt;&lt;/a&gt; to show me git diff markers in the sign column and to access hunks of changes easily.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I use gitgutter to preview (&lt;code&gt;,hp&lt;/code&gt;), stage (&lt;code&gt;,hs&lt;/code&gt;), and undo (&lt;code&gt;,hu&lt;/code&gt;) hunks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;git&#34;&gt;Git&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -708,19 +720,19 @@ many &lt;em&gt;a&lt;/em&gt;s as it can and never gives any of them back.&lt;/p&g
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a*&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a*?&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a?&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: a, &amp;lsquo;&amp;rsquo;, a, a, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: a, &amp;lsquo;&amp;rsquo;, a, a, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a??&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{2}&lt;/code&gt;&lt;/td&gt;
@@ -728,11 +740,11 @@ many &lt;em&gt;a&lt;/em&gt;s as it can and never gives any of them back.&lt;/p&g
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{,2}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{,2}?&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{1,}&lt;/code&gt;&lt;/td&gt;
@@ -1291,7 +1303,7 @@ quantifier contains the last matched iteration.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;(\b[\w&#39;]++\b) \b\1\b&lt;/code&gt;. Discussion: If we don&amp;rsquo;t use word boundaries we&amp;rsquo;d
 also match the &lt;em&gt;s&lt;/em&gt;s in &lt;em&gt;was some&lt;/em&gt; and &lt;em&gt;great&lt;/em&gt; in &lt;em&gt;great greatness&lt;/em&gt;, and
-without allowing for &lt;em&gt;&#39;&lt;/em&gt; we&amp;rsquo;d miss the repetition of &lt;em&gt;wasn&amp;rsquo;t&lt;/em&gt;. Adding a
+without allowing for &lt;em&gt;&amp;rsquo;&lt;/em&gt; we&amp;rsquo;d miss the repetition of &lt;em&gt;wasn&amp;rsquo;t&lt;/em&gt;. Adding a
 possessive quantifier avoids unnecessary backtracking, which we never want
 here, as we always want to capture full words only.&lt;/p&gt;
 &lt;/li&gt;
@@ -1668,7 +1680,7 @@ with readability.)&lt;/li&gt;
 &lt;td&gt;Intersection&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;r&#39;[\W]&amp;amp;&amp;amp;[\S]]&#39;&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;em&gt;a.k$_8&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;[&#39;.&#39;, &amp;lsquo;$&#39;]&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;[&amp;rsquo;.&amp;rsquo;, &amp;lsquo;$&amp;rsquo;]&lt;/em&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Union&lt;/td&gt;
@@ -1849,17 +1861,17 @@ multiples of &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
 &lt;li&gt;Match all strings inside quotation marks in the below block.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These are &amp;lsquo;string one&amp;rsquo; and &amp;lsquo;string
-two&amp;rsquo; and &amp;lsquo;that&amp;rsquo;s string three&amp;rsquo;.&lt;/p&gt;
+two&amp;rsquo; and &amp;rsquo;that&amp;rsquo;s string three&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Thus far (with global flag/&lt;code&gt;findall()&lt;/code&gt;):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;lsquo;.*&amp;rsquo; Doesn&amp;rsquo;t work because * is greedy and matches &amp;lsquo;string one&amp;rsquo; and &#39; and
+&lt;li&gt;&amp;lsquo;.*&amp;rsquo; Doesn&amp;rsquo;t work because * is greedy and matches &amp;lsquo;string one&amp;rsquo; and &amp;rsquo; and
 similar match on second line.&lt;/li&gt;
 &lt;li&gt;&amp;lsquo;.*?&amp;rsquo; Doesn&amp;rsquo;t match string two since . doesn&amp;rsquo;t match line-breaks and get&amp;rsquo;s
 mixed up on second line.&lt;/li&gt;
-&lt;li&gt;[^&#39;\v]+ Behaves as the above&lt;/li&gt;
-&lt;li&gt;[^&#39;]+ Now matches second string but including the linebreak, which we don&amp;rsquo;t
+&lt;li&gt;[^&amp;rsquo;\v]+ Behaves as the above&lt;/li&gt;
+&lt;li&gt;[^&amp;rsquo;]+ Now matches second string but including the linebreak, which we don&amp;rsquo;t
 want as part of the match, and still gets tripped up by that&amp;rsquo;s.&lt;/li&gt;
-&lt;li&gt;Wanted: match string two but then exclude \v from match, ignore &#39; that are
+&lt;li&gt;Wanted: match string two but then exclude \v from match, ignore &amp;rsquo; that are
 part of a word.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
@@ -1899,11 +1911,23 @@ file.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve remaped Caps Look to &lt;code&gt;&amp;lt;ctrl&amp;gt;&lt;/code&gt; on my mac.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;quarto-setup&#34;&gt;Quarto setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;shift-k&amp;gt;&lt;/code&gt; to open help on object under cursor, &lt;code&gt;&amp;lt;shift-kk&amp;gt;&lt;/code&gt; to ender help window, &lt;code&gt;q&lt;/code&gt; to quit help.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Terminal: open new terminal with &lt;code&gt;&amp;lt;leader&amp;gt;c&lt;/code&gt;, then activate terminal by going into insert mode and going back to normal mode with usual keybinding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;reminders&#34;&gt;Reminders&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;git-gutter: &lt;code&gt;]h&lt;/code&gt; and &lt;code&gt;[h&lt;/code&gt; to jump to next and previous hunk, &lt;code&gt;&amp;lt;leader&amp;gt;hs&lt;/code&gt; and
 &lt;code&gt;&amp;lt;leader&amp;gt;hu&lt;/code&gt; to stage and unstage hunk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim takes an additional command on startup (e.g. &lt;code&gt;nvim +CommandT&lt;/code&gt;).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Use one keystroke to move and one to execute (e.g. the dot-formula).&lt;/p&gt;
@@ -2005,9 +2029,9 @@ check whether one of Tim Pope&amp;rsquo;s plugins solves it).&lt;/p&gt;
 &lt;h2 id=&#34;modes&#34;&gt;Modes&lt;/h2&gt;
 &lt;h3 id=&#34;normal-mode&#34;&gt;Normal mode&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Operators work as follows: operator + motion = action. E.g. &lt;code&gt;dl&lt;/code&gt; deletes
-character to the right, &lt;code&gt;diw&lt;/code&gt; the word under the cursor (without the
-surrounding whitespace), &lt;code&gt;dap&lt;/code&gt; the current paragraph (including the
+&lt;li&gt;Operators work as follows: operator + [count] + motion = action. E.g. &lt;code&gt;d2l&lt;/code&gt;
+deletes two character to the right, &lt;code&gt;diw&lt;/code&gt; the word under the cursor (without
+the surrounding whitespace), &lt;code&gt;dap&lt;/code&gt; the current paragraph (including the
 surrounding whitespace). Similarly, &lt;code&gt;gUap&lt;/code&gt; converts the current paragraph to
 uppercase.&lt;/li&gt;
 &lt;/ul&gt;
@@ -2105,7 +2129,7 @@ uppercase.&lt;/li&gt;
 &lt;td&gt;Jump to end of line&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;a{char}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;f{char}&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;F{char}&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Position cursor on character&lt;/td&gt;
 &lt;/tr&gt;
@@ -2146,6 +2170,7 @@ uppercase.&lt;/li&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;!-- tohere --&gt;
 &lt;p&gt;Act, repeat, reverse:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -4690,6 +4715,9 @@ the terminal. I often use &lt;code&gt;pwd | pbcopy&lt;/code&gt; to get a directo
 elsewhere, and &lt;code&gt;pbpaste &amp;gt; .gitignore&lt;/code&gt; to create a gitignore file from a
 template (e.g. from gitignore.io).&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renaming multiple files: &lt;code&gt;rename &#39;s/&amp;lt;pattern to replace&amp;gt;/&amp;lt;new pattern&amp;gt;&#39; [files]&lt;/code&gt;. For example, to replace &lt;code&gt;foo&lt;/code&gt; with &lt;code&gt;bar&lt;/code&gt; in all Python files, use &lt;code&gt;rename &#39;s/foo/bar/&#39; *.py&lt;/code&gt;. Notice that the string command passed is a vim substitution pattern.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;file-handling&#34;&gt;File handling&lt;/h2&gt;
 &lt;ul&gt;
@@ -4801,6 +4829,18 @@ permissions for all users (e.g. 753 is rwxr-x-wx).&lt;/p&gt;
 &lt;p&gt;Directory permissions: r means you can read content (e.g. do ls), w means you
 can write (e.g. create files or subdirectories), and x means you can enter
 (e.g. cd).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;shebang&#34;&gt;Shebang&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The shebang character sequence (&lt;code&gt;#!&lt;/code&gt;) is used in the first line of a script to specify the interpreter that executes the commands in the script.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are two options, well explained &lt;a href=&#34;https://www.baeldung.com/linux/bash-shebang-lines&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; (and also, a bit more elaborately, &lt;a href=&#34;https://en.wikipedia.org/wiki/Shebang_%28Unix%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;: one is the specify the absoute path to the interpreter (&lt;code&gt;#!/bin/zsh&lt;/code&gt;), the other is to use the &lt;code&gt;env&lt;/code&gt; utility to search for the specified interpreter in all directories in the &lt;code&gt;$PATH&lt;/code&gt; variable and use the first occurrence that is found (&lt;code&gt;#!/usr/bin/env zsh&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The second option trades security for portability and is what most people seem to recommend. So this is what I use.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;

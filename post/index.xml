@@ -5,7 +5,7 @@
     <link>https://fabiangunzinger.github.io/post/</link>
       <atom:link href="https://fabiangunzinger.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 15 Jun 2022 08:31:22 +0100</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
@@ -13,11 +13,17 @@
     </image>
     
     <item>
-      <title>Jupyter</title>
-      <link>https://fabiangunzinger.github.io/post/jupyter/</link>
-      <pubDate>Wed, 15 Jun 2022 08:31:22 +0100</pubDate>
-      <guid>https://fabiangunzinger.github.io/post/jupyter/</guid>
-      <description></description>
+      <title>Pandas dates and times</title>
+      <link>https://fabiangunzinger.github.io/post/python-dates-and-times/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-dates-and-times/</guid>
+      <description> &lt;iframe
+       src=&#34;./pandas-dates-and-times.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;4200px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
     </item>
     
     <item>
@@ -54,6 +60,18 @@
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://fabiangunzinger.github.io/post/git/</guid>
       <description>&lt;p&gt;My evolving notes and on how to effectively use Git and GitHub.&lt;/p&gt;
+&lt;h2 id=&#34;workflow&#34;&gt;Workflow&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;I code in Neovim in the terminal, within tmux sessions.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I use &lt;a href=&#34;https://github.com/airblade/vim-gitgutter&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;gitgutter&lt;/code&gt;&lt;/a&gt; to show me git diff markers in the sign column and to access hunks of changes easily.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I use gitgutter to preview (&lt;code&gt;,hp&lt;/code&gt;), stage (&lt;code&gt;,hs&lt;/code&gt;), and undo (&lt;code&gt;,hu&lt;/code&gt;) hunks.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;git&#34;&gt;Git&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -889,19 +907,19 @@ many &lt;em&gt;a&lt;/em&gt;s as it can and never gives any of them back.&lt;/p&g
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a*&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a*?&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a?&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: a, &amp;lsquo;&amp;rsquo;, a, a, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: a, &amp;lsquo;&amp;rsquo;, a, a, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a??&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{2}&lt;/code&gt;&lt;/td&gt;
@@ -909,11 +927,11 @@ many &lt;em&gt;a&lt;/em&gt;s as it can and never gives any of them back.&lt;/p&g
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{,2}&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;5: a, &amp;lsquo;&amp;rsquo;, aa, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{,2}?&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&#39;&lt;/td&gt;
+&lt;td&gt;6: &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &amp;lsquo;&amp;rsquo;, &#39;&amp;rsquo;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;a{1,}&lt;/code&gt;&lt;/td&gt;
@@ -1472,7 +1490,7 @@ quantifier contains the last matched iteration.&lt;/p&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;(\b[\w&#39;]++\b) \b\1\b&lt;/code&gt;. Discussion: If we don&amp;rsquo;t use word boundaries we&amp;rsquo;d
 also match the &lt;em&gt;s&lt;/em&gt;s in &lt;em&gt;was some&lt;/em&gt; and &lt;em&gt;great&lt;/em&gt; in &lt;em&gt;great greatness&lt;/em&gt;, and
-without allowing for &lt;em&gt;&#39;&lt;/em&gt; we&amp;rsquo;d miss the repetition of &lt;em&gt;wasn&amp;rsquo;t&lt;/em&gt;. Adding a
+without allowing for &lt;em&gt;&amp;rsquo;&lt;/em&gt; we&amp;rsquo;d miss the repetition of &lt;em&gt;wasn&amp;rsquo;t&lt;/em&gt;. Adding a
 possessive quantifier avoids unnecessary backtracking, which we never want
 here, as we always want to capture full words only.&lt;/p&gt;
 &lt;/li&gt;
@@ -1849,7 +1867,7 @@ with readability.)&lt;/li&gt;
 &lt;td&gt;Intersection&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;r&#39;[\W]&amp;amp;&amp;amp;[\S]]&#39;&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;em&gt;a.k$_8&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;em&gt;[&#39;.&#39;, &amp;lsquo;$&#39;]&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;[&amp;rsquo;.&amp;rsquo;, &amp;lsquo;$&amp;rsquo;]&lt;/em&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Union&lt;/td&gt;
@@ -2030,17 +2048,17 @@ multiples of &lt;em&gt;n&lt;/em&gt;.&lt;/p&gt;
 &lt;li&gt;Match all strings inside quotation marks in the below block.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;These are &amp;lsquo;string one&amp;rsquo; and &amp;lsquo;string
-two&amp;rsquo; and &amp;lsquo;that&amp;rsquo;s string three&amp;rsquo;.&lt;/p&gt;
+two&amp;rsquo; and &amp;rsquo;that&amp;rsquo;s string three&amp;rsquo;.&lt;/p&gt;
 &lt;p&gt;Thus far (with global flag/&lt;code&gt;findall()&lt;/code&gt;):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;lsquo;.*&amp;rsquo; Doesn&amp;rsquo;t work because * is greedy and matches &amp;lsquo;string one&amp;rsquo; and &#39; and
+&lt;li&gt;&amp;lsquo;.*&amp;rsquo; Doesn&amp;rsquo;t work because * is greedy and matches &amp;lsquo;string one&amp;rsquo; and &amp;rsquo; and
 similar match on second line.&lt;/li&gt;
 &lt;li&gt;&amp;lsquo;.*?&amp;rsquo; Doesn&amp;rsquo;t match string two since . doesn&amp;rsquo;t match line-breaks and get&amp;rsquo;s
 mixed up on second line.&lt;/li&gt;
-&lt;li&gt;[^&#39;\v]+ Behaves as the above&lt;/li&gt;
-&lt;li&gt;[^&#39;]+ Now matches second string but including the linebreak, which we don&amp;rsquo;t
+&lt;li&gt;[^&amp;rsquo;\v]+ Behaves as the above&lt;/li&gt;
+&lt;li&gt;[^&amp;rsquo;]+ Now matches second string but including the linebreak, which we don&amp;rsquo;t
 want as part of the match, and still gets tripped up by that&amp;rsquo;s.&lt;/li&gt;
-&lt;li&gt;Wanted: match string two but then exclude \v from match, ignore &#39; that are
+&lt;li&gt;Wanted: match string two but then exclude \v from match, ignore &amp;rsquo; that are
 part of a word.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
@@ -2064,7 +2082,7 @@ resource&lt;/a&gt;&lt;/p&gt;
     </item>
     
     <item>
-      <title>Pandas categories</title>
+      <title>pandas categories</title>
       <link>https://fabiangunzinger.github.io/post/pandas-categories/</link>
       <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://fabiangunzinger.github.io/post/pandas-categories/</guid>
@@ -2122,11 +2140,23 @@ file.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve remaped Caps Look to &lt;code&gt;&amp;lt;ctrl&amp;gt;&lt;/code&gt; on my mac.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;quarto-setup&#34;&gt;Quarto setup&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;shift-k&amp;gt;&lt;/code&gt; to open help on object under cursor, &lt;code&gt;&amp;lt;shift-kk&amp;gt;&lt;/code&gt; to ender help window, &lt;code&gt;q&lt;/code&gt; to quit help.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Terminal: open new terminal with &lt;code&gt;&amp;lt;leader&amp;gt;c&lt;/code&gt;, then activate terminal by going into insert mode and going back to normal mode with usual keybinding.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id=&#34;reminders&#34;&gt;Reminders&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;git-gutter: &lt;code&gt;]h&lt;/code&gt; and &lt;code&gt;[h&lt;/code&gt; to jump to next and previous hunk, &lt;code&gt;&amp;lt;leader&amp;gt;hs&lt;/code&gt; and
 &lt;code&gt;&amp;lt;leader&amp;gt;hu&lt;/code&gt; to stage and unstage hunk.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vim takes an additional command on startup (e.g. &lt;code&gt;nvim +CommandT&lt;/code&gt;).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Use one keystroke to move and one to execute (e.g. the dot-formula).&lt;/p&gt;
@@ -2228,9 +2258,9 @@ check whether one of Tim Pope&amp;rsquo;s plugins solves it).&lt;/p&gt;
 &lt;h2 id=&#34;modes&#34;&gt;Modes&lt;/h2&gt;
 &lt;h3 id=&#34;normal-mode&#34;&gt;Normal mode&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Operators work as follows: operator + motion = action. E.g. &lt;code&gt;dl&lt;/code&gt; deletes
-character to the right, &lt;code&gt;diw&lt;/code&gt; the word under the cursor (without the
-surrounding whitespace), &lt;code&gt;dap&lt;/code&gt; the current paragraph (including the
+&lt;li&gt;Operators work as follows: operator + [count] + motion = action. E.g. &lt;code&gt;d2l&lt;/code&gt;
+deletes two character to the right, &lt;code&gt;diw&lt;/code&gt; the word under the cursor (without
+the surrounding whitespace), &lt;code&gt;dap&lt;/code&gt; the current paragraph (including the
 surrounding whitespace). Similarly, &lt;code&gt;gUap&lt;/code&gt; converts the current paragraph to
 uppercase.&lt;/li&gt;
 &lt;/ul&gt;
@@ -2328,7 +2358,7 @@ uppercase.&lt;/li&gt;
 &lt;td&gt;Jump to end of line&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;a{char}&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;f{char}&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;F{char}&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;Position cursor on character&lt;/td&gt;
 &lt;/tr&gt;
@@ -2369,6 +2399,7 @@ uppercase.&lt;/li&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;!-- tohere --&gt;
 &lt;p&gt;Act, repeat, reverse:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -5255,6 +5286,9 @@ the terminal. I often use &lt;code&gt;pwd | pbcopy&lt;/code&gt; to get a directo
 elsewhere, and &lt;code&gt;pbpaste &amp;gt; .gitignore&lt;/code&gt; to create a gitignore file from a
 template (e.g. from gitignore.io).&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Renaming multiple files: &lt;code&gt;rename &#39;s/&amp;lt;pattern to replace&amp;gt;/&amp;lt;new pattern&amp;gt;&#39; [files]&lt;/code&gt;. For example, to replace &lt;code&gt;foo&lt;/code&gt; with &lt;code&gt;bar&lt;/code&gt; in all Python files, use &lt;code&gt;rename &#39;s/foo/bar/&#39; *.py&lt;/code&gt;. Notice that the string command passed is a vim substitution pattern.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;file-handling&#34;&gt;File handling&lt;/h2&gt;
 &lt;ul&gt;
@@ -5366,6 +5400,18 @@ permissions for all users (e.g. 753 is rwxr-x-wx).&lt;/p&gt;
 &lt;p&gt;Directory permissions: r means you can read content (e.g. do ls), w means you
 can write (e.g. create files or subdirectories), and x means you can enter
 (e.g. cd).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;shebang&#34;&gt;Shebang&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The shebang character sequence (&lt;code&gt;#!&lt;/code&gt;) is used in the first line of a script to specify the interpreter that executes the commands in the script.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There are two options, well explained &lt;a href=&#34;https://www.baeldung.com/linux/bash-shebang-lines&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; (and also, a bit more elaborately, &lt;a href=&#34;https://en.wikipedia.org/wiki/Shebang_%28Unix%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;: one is the specify the absoute path to the interpreter (&lt;code&gt;#!/bin/zsh&lt;/code&gt;), the other is to use the &lt;code&gt;env&lt;/code&gt; utility to search for the specified interpreter in all directories in the &lt;code&gt;$PATH&lt;/code&gt; variable and use the first occurrence that is found (&lt;code&gt;#!/usr/bin/env zsh&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The second option trades security for portability and is what most people seem to recommend. So this is what I use.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;sources&#34;&gt;Sources&lt;/h2&gt;
@@ -5499,6 +5545,194 @@ can write (e.g. create files or subdirectories), and x means you can enter
        height=&#34;2100px&#34;
        style=&#34;border:none;&#34;&gt;
  &lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://fabiangunzinger.github.io/post/switzerland-history/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/switzerland-history/</guid>
+      <description>&lt;p&gt;Swiss History&lt;/p&gt;
+&lt;p&gt;Next&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://crookedtimber.org/2014/08/26/the-world-is-squared-episode-1-switzerland-country-of-joyce/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://crookedtimber.org/2014/08/26/the-world-is-squared-episode-1-switzerland-country-of-joyce/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Matt Yglesias on why Switzerland works so well&lt;/li&gt;
+&lt;li&gt;Scott Sumner: Switzerland’s secret sauce&lt;/li&gt;
+&lt;li&gt;Archiv Solothurn (Gunzinger Stammforschung)&lt;/li&gt;
+&lt;li&gt;Solothurnergeschichte&lt;/li&gt;
+&lt;li&gt;CH book from Stauffacher Bern (good selection)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Schweizer Geschichte&lt;/p&gt;
+&lt;p&gt;‘4 Sprachen, 4 Kulturen, 26 Kantone, Einheit in der Vielfalt. In Frieden lebend seit 1848.’ Adolf Ogi&lt;/p&gt;
+&lt;h3 id=&#34;bundesbrief-von-1291&#34;&gt;Bundesbrief von 1291&lt;/h3&gt;
+&lt;h3 id=&#34;schlacht-von-morgarten-1315-15-november&#34;&gt;Schlacht von Morgarten 1315 (15. November)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Erste Schlacht zwischen den Habsburgern und den Eidgenossen&lt;/li&gt;
+&lt;li&gt;Habsburger ziehen in die Zentralschweiz Richtung Morgarten&lt;/li&gt;
+&lt;li&gt;Schwyzer (unter Landamman Werner Stauffacher), Urner, und Unterwaldner machen sich kampfereit.&lt;/li&gt;
+&lt;li&gt;Unklar, ob und in welchem Ausmass Schlacht wirklich statt fand&lt;/li&gt;
+&lt;li&gt;Führte aber dazu, dass die drei Waldstätte ihren früheren Bund mit dem Bundesbrief vom 12. Dezember 1315 im ‘Bund von Brunnen’ erneuerten.&lt;/li&gt;
+&lt;li&gt;Doku: [https://www.srf.ch/play/tv/die-schweizer/video/die-schlacht-am-morgarten-werner-stauffacher?id=fcd0fdf3-4635-4f44-a96a-f1a213691dcb]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;schlacht-von-murten-1476&#34;&gt;Schlacht von Murten 1476&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Karl der Kühne, Herzog von Burgund, träumt von Grossreich von Nordsee bis zu den Alpen. Bern und Fribourg wollen unabhängig bleiben.&lt;/li&gt;
+&lt;li&gt;Eidgenossen kommen den sich in Murten verschanzenden Bernern zu Hilfe, schlagen die über 20,000 Mann starke Armee der gefürchteten Burgunder vernichtend.&lt;/li&gt;
+&lt;li&gt;Eidgenossen erbeuten Burgunder-Schatz&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;stanser-verkomniss-1481&#34;&gt;Stanser Verkomniss 1481&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Stadtkantone (Bern, Zürich, Luzern) und Landkantone (Waldstätte, Zug, Glarus) streiten vordergründig um die Verteilung des Burgunderschatzes (Stadtkantone wollen Aufteilung proportional zur Anzahl beigesteuerter Truppen in der Schacht von Murten, Landkantone wollen Aufteilung zu gleichen Teilen) und tiefgründig um die Machtverteilung in der Eidgenossenschaft, welche die Stadkantone an sich reissen wollen (mittels Sonderbündnis, und mittels Aufnahme von Solothurn und Fribourg).&lt;/li&gt;
+&lt;li&gt;Es droht der Zerfall der Eidgenossenschaft&lt;/li&gt;
+&lt;li&gt;Auf unbekannten Rat von Niklaus von Flüe hin setzen sich die Ratsherren nochmals zusammen und einigen sich nach zwei Stunden.&lt;/li&gt;
+&lt;li&gt;Abkommen: folgt Rat von Bruder Klaus. Kompromiss: Bern und Fribourg werden aufgenommen, kein Sonderbund der Stadtkantone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tagsatzung&#34;&gt;Tagsatzung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ab der Aufnahme Appenzells ist die Eidgenossenschaft ab 1513 ein Bund aus 13 Orten.&lt;/li&gt;
+&lt;li&gt;An der Tagsatzung treffen sich die Gesandten der Orte zur Besprechung und Entscheiden gemeinsamer politischer Geschäfte.&lt;/li&gt;
+&lt;li&gt;Im Dreissigjährigen Krieg 1618 – 1648 beschliesst die Tagsatzung ihre Neutralität gegenüber den beiden Konfessionen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;völkerrechtliche-souveränität&#34;&gt;Völkerrechtliche Souveränität&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Der Westfällische Frieden (von Münster) besiegelt 1648 den Dreissigjährigen Krieg und gewährt der Eidgenossenschaft (und Holland) die Unabhängigkeit vom Heiligen Römischen Reich und somit erstmals die völkerrechtliche Souveränität. Bis sich die Eidgenossenschaft als unabhängigen und souveränen Staat versteht dauert es allerdings weitere 150 Jahre.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;solddienst&#34;&gt;Solddienst&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Zwischen 1500 und 1850 dienen rund 1.5 Millionen Schweizer als Söldner: Für Frankreich, Venedig, die Niederlande, den Vatikan (Gründung der Schweizer Garde in 1506 durch Papst Julius II)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;allianz-mit-frankreich&#34;&gt;Allianz mit Frankreich&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Frankreich ist seit dem 15. Jahrhundert ein wichtiger Allianzpartner, mit welchem Friedensvereinbarungen, Söldnerabkommen und Handelsabkommen geschlossen werden.&lt;/li&gt;
+&lt;li&gt;Abschluss eines Vertrags auf &amp;lsquo;Ewigen Frieden&amp;rsquo; in 1416 nach der von Frankreich gewonnenen Schlacht von Marignano (Eidgenossenschaft tritt Mailand an Italien ab, bahält Tessin).&lt;/li&gt;
+&lt;li&gt;Die Franzosen profitieren vom Zugang zu Söldnern, die Eidgenossen von Freiem Handeln, Sicherheit von Händlern und Güter, Schutz vor willkürlichen Abgaben, und Zollreduktionen.&lt;/li&gt;
+&lt;li&gt;1777 wird die Allianz mit Frankreich in der St. Ursen Kirche in Solothurn nochmals feierlich erneuert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;reformation&#34;&gt;Reformation&lt;/h3&gt;
+&lt;h3 id=&#34;humanismus&#34;&gt;Humanismus&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Meint Abkehr von mittelalterlicher Theologie und Hinwendung zum Menschen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;helvetische-republik-1798&#34;&gt;Helvetische Republik (1798)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Die Helvetische Revolution von 1798 beseitigt die aristokratischen Privilegien aus dem Ancien Régime.&lt;/li&gt;
+&lt;li&gt;Zum ersten Mal werden ein Parlament und eine Landesregierung gewählt.&lt;/li&gt;
+&lt;li&gt;Prinzipien: Rechtsgleichheit, Volkssouveränität, Gewaltentrennung.&lt;/li&gt;
+&lt;li&gt;Neutralität wird aufgegeben als Preis für die Unterstützung aus Frankreich, nimmt von 1798 bis 1802 gar Französische Besatzung in Kauf.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;sonderbund&#34;&gt;Sonderbund&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Nach der 1830er Revolution in Paris bilden sich in vielen Kantonen Volksbewegungen gegen die Aristokratie und für mehr Demokratie und die Gewaltentrennung.&lt;/li&gt;
+&lt;li&gt;Ein Vorstoss zur Grundlegenden Erneuerung des Bundes spaltet die Kantone. 1845 stellen sich Luzern, Uri, Schwyz, Unterwalden, Zug, Freiburg, Wallis mit einem Sonderbund gegen diese liberalen Absichten (Gegründet 1845 im Rössli in Ruswil).&lt;/li&gt;
+&lt;li&gt;Im November 1847 erzwingen die liberalen Kantone (nach 27-tägigem Bürgerkrieg) die Auflösung des Sonderbundes.&lt;/li&gt;
+&lt;li&gt;Im Sonderbundskrieg schickt die Tagsatzung im November 1847 gegen 100,000 Mann (unter General Guillaume-Henri Dufour) gegen die Truppen des Sonderbunds.&lt;/li&gt;
+&lt;li&gt;Am 23. November 1847 landen die Eidgenössischen Truppen in Gisikon den entscheidenden Sieg gegen die Truppen des Sonderbunds.&lt;/li&gt;
+&lt;li&gt;Kapitulationsurkunde wird im Luzerner Schweizerhof diktiert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;bundesstaat&#34;&gt;Bundesstaat&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Die Sieger des Sonderbundskriegs machen mit der Bundersverfassung von 1848 die Schweiz zur republikanischen Insel inmitten des monarchischen Europas.&lt;/li&gt;
+&lt;li&gt;Die neue Verfassung ist vom Liberalismus geprägt:
+&lt;ul&gt;
+&lt;li&gt;allgemeines Wahlrecht&lt;/li&gt;
+&lt;li&gt;Niederlassungsfreiheit für Reformierte und Katholiken&lt;/li&gt;
+&lt;li&gt;Abschaffung der Binnenzölle&lt;/li&gt;
+&lt;li&gt;Einführung einer einheitlicen Währung (Gründung der Nationalbank erst 1907)&lt;/li&gt;
+&lt;li&gt;Gewaltentrennung (Die vom Volk gewählte Legislative wählt Exekutive, Bundesrichter, und – im Kriegsfall – den Oberbefehlshaber. Die Exekutive ist das siebenköpfige Gremium des Bundesrats, welches im Kollegialitätsprinzip regiert und Staatsoberhaupt ist).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;1852 baut die Stadt Bern das Rathaus für Parlament und Bundesrat (das heutige Bundeshaus West). 1902 wird es durch das Bundeshaus Ost und das Parlamentsgebäude erweitert.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;verfassungsrevision-von-1874&#34;&gt;Verfassungsrevision von 1874&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Leitet auf Bundesebene die direkte Demokratie ein (mittels fakultativem Referendum und Initiativrecht – Bei 30 000 Unterschriften kommt ein Parlamentsentscheid vors Volk. Führt dazu, dass breite Kreise in Beschlüssen einbezogen werden müssen – Geburt der Konkordanzdemokratie).&lt;/li&gt;
+&lt;li&gt;Einheitliche Masse (Liter, Meter, Kilogram) werden eingeführt und lösen die lokalen Masseinheiten ab.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;arbeiterbewegung&#34;&gt;Arbeiterbewegung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ende des 19. Jahrhunderts streiken Arbeitnehmer für höhere Löhne, bessere Arbeitsbedingungen und Sozialwerke.&lt;/li&gt;
+&lt;li&gt;Bewegung gipfelt 1918 im Generalstreik (11. bis 14. November), einer kritischen innenpolitischen Situation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;frauenstimmrecht&#34;&gt;Frauenstimmrecht&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;National seit 16. März 1971&lt;/li&gt;
+&lt;li&gt;Im letzten Kanton, Appenzell Innerrhoden, seit 27. November 1990 (auf Bundesgerichtsentscheid, entgegen Abstimmung der Lanzgemeinde vom 29. April 1990).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;erster-weltkrieg&#34;&gt;Erster Weltkrieg&lt;/h3&gt;
+&lt;h3 id=&#34;zweiter-weltkrieg&#34;&gt;Zweiter Weltkrieg&lt;/h3&gt;
+&lt;h3 id=&#34;schweizer-wirtschaft&#34;&gt;Schweizer Wirtschaft&lt;/h3&gt;
+&lt;h4 id=&#34;textilien-uhren-und-schokolade&#34;&gt;Textilien, Uhren, und Schokolade&lt;/h4&gt;
+&lt;h4 id=&#34;maschinen&#34;&gt;Maschinen&lt;/h4&gt;
+&lt;h4 id=&#34;chemie&#34;&gt;Chemie&lt;/h4&gt;
+&lt;h3 id=&#34;berufsbildung&#34;&gt;Berufsbildung&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ausbildung mittels Berufslehre wird ab dem 19. Jh. durch Gewerbe- und Industrieschulen ergänzt. Diese werden seit 1884 vom Bund finanziell unterstützt.&lt;/li&gt;
+&lt;li&gt;1855 Gründung des Schweizer Polytechnikums, der ETH&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;lateinische-münzunion&#34;&gt;Lateinische Münzunion&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;1848 mit der neuen Bundesverfassung wird das Münzwesen Sache des Bundes.&lt;/li&gt;
+&lt;li&gt;1850 wird der Franken eingeführt, welcher die Kantonalen Münzen ersetzt.&lt;/li&gt;
+&lt;li&gt;1865 Begründung der Lateinischen Münzunion:  Belgien, Frankreich, Italien und die Schweiz Münzen mit gleichem Gewicht, Edelmetallgehalt (Gold oder Silber) und Aussehen zu prägen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;finanzplatz-schweiz&#34;&gt;Finanzplatz Schweiz&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Heutiges System nimmt mit dem Aufkommen der Handelsbanken im 19. Jh. und der Gründung der Nationalbank 1907 seine Gestalt an.&lt;/li&gt;
+&lt;li&gt;Stabilität, Eintauschbarkeit des Frankens, Rechtssicherheit, Banken- und Kundengeheimnis machen den Finanzplatz im 20. Jh. attraktiv.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;symbole-der-schweiz&#34;&gt;Symbole der Schweiz&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Alphorn (Dient ursprünglich den Hirten zur Übermittlung von Signalen, erlebt ab dem 19. Jh. eine Renaissance als Volksmusikalisches Instrument).&lt;/li&gt;
+&lt;li&gt;Postauto (Löst 1904 die Postkutschen ab, überqueren Alpenpässe mit Touristen, versorgen als öffentliches Verkehrsmittel Dörfer mit Post).&lt;/li&gt;
+&lt;li&gt;Goldvreneli (Münze aus Gold, ist von 1897 bis 1918 gängiges Zalungsmittel. Danach als Patengeschenk beliebt. Wirt während dem Zweiten Weltkrieg zum ‘Vreneli’ und steht seither für den Mythos, dass der Schweizer Wohlstand auf echtem Gold beruht).&lt;/li&gt;
+&lt;li&gt;Uhren.&lt;/li&gt;
+&lt;li&gt;Schokolade (1819 wird die erste Manufaktur in der Schweiz eröffnet. Seither ist Schweizer Schokolade trotz teurer Einfuhr von Kakao und Zucker ein Exportschlager. Schweizer selbst konsumieren pro Jahr 12 Kilogram, das ist weltmeisterlich.&lt;/li&gt;
+&lt;li&gt;Kuhglocken&lt;/li&gt;
+&lt;li&gt;Heidi (Kinderbuch von Johanna Spyri, erscheint 1880 und wird zum Welterfolg. Die Geschichte des unschuldigen Waisenmädchens in den Bergen verkörpert den Mythos der Freiheit in der heilen Schweizer Alpenwelt).&lt;/li&gt;
+&lt;li&gt;Käse (Hartkäse wird seit dem 16. Jh. europaweit verkauft.&lt;/li&gt;
+&lt;li&gt;Scherenschnitt&lt;/li&gt;
+&lt;li&gt;Rütlischwur (Kernelement des Gründungsmythos).&lt;/li&gt;
+&lt;li&gt;Armbrust (wird hauptsächlich als Jagd- und Sportwaffe benutzt, erhält Kultstatus durch Schiller’s Willhelm Tell).&lt;/li&gt;
+&lt;li&gt;Willhelm Tell&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;das-postwesen&#34;&gt;Das Postwesen&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Wird 1849 eidgenössisch.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;persönlichkeiten&#34;&gt;Persönlichkeiten&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Werner Stauffacher (Landamman von Schwyz, führt die Eidgenossen in der Schlacht von Morgarten)&lt;/li&gt;
+&lt;li&gt;Niklaus von Flüe (Bruder Klaus, auch politisch einflussreicher Hermit)&lt;/li&gt;
+&lt;li&gt;Hans Waldmann (despotischer Bürgermeister von Zürich, verhilft Schweiz zu internationalem Ansehen durch Kontakte zu Habsburg und Förderung des Söldnerwesens)&lt;/li&gt;
+&lt;li&gt;Guillaume Henri Dufour
+&lt;ul&gt;
+&lt;li&gt;Offizier der Genietruppen in der Napoleonischen Armee&lt;/li&gt;
+&lt;li&gt;Kantonsingenieur von Genf&lt;/li&gt;
+&lt;li&gt;Initiiert die erste exakte Landkarte der Schweiz (zu seiner Ehre wird der Höchste Berg der Schweiz von ‘Höchste Spitze’ auf ’Dufour Spitze’ umsagetauft)&lt;/li&gt;
+&lt;li&gt;General im Sonderbundskrieg&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Alfred Escher. Gründet 1856 die Schweizerische Kreditanstalt zur Finanzierung grosser Bauwerke (Nordostbahn). Einer der mächtigsten und einflussreichsten Politiker und Unternehmer der Schweiz.&lt;/li&gt;
+&lt;li&gt;Adolf Ogi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;zitate&#34;&gt;Zitate&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Zieht den Zaun nicht zu weit. Niklaus von Flüe&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mischt euch nicht in fremde Händel. Niklaus von Flüe (bekommt Wirkung erst nach der Niederlage in der Schlacht von Marignano 1515). Kann als Ursprung der Idee von Neutralität gegen Aussen und Frieden im Inneren gedeutet werden)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Wenn die Schweiz in der Welt etwas bewirken soll, dann kann sie es nicht mit dem Bajonett erreichen, sondern nur durch ihr Beispiel des richtigen Gebrauchs der Freiheit, der gesunden Staatsfinanzen, der Stabilität und des Wirtschaftswachstums. Alfred Escher.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;varia&#34;&gt;Varia&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Patrick Chappote, Kartoonist, [http://www.chappatte.com/en/]
+b&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     

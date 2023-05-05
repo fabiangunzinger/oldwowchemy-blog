@@ -395,7 +395,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.ced4c4e0190cf57ce42494e355f2bdf6.js"></script>
+  <script src="/js/wowchemy-init.min.9e9fa4b2ccd29f9edfae161d14d2effd.js"></script>
 
   
 
@@ -1097,19 +1097,19 @@ many <em>a</em>s as it can and never gives any of them back.</p>
 </tr>
 <tr>
 <td><code>a*</code></td>
-<td>5: a, &lsquo;&rsquo;, aa, &lsquo;&rsquo;, ''</td>
+<td>5: a, &lsquo;&rsquo;, aa, &lsquo;&rsquo;, '&rsquo;</td>
 </tr>
 <tr>
 <td><code>a*?</code></td>
-<td>6: &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, ''</td>
+<td>6: &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, '&rsquo;</td>
 </tr>
 <tr>
 <td><code>a?</code></td>
-<td>6: a, &lsquo;&rsquo;, a, a, &lsquo;&rsquo;, ''</td>
+<td>6: a, &lsquo;&rsquo;, a, a, &lsquo;&rsquo;, '&rsquo;</td>
 </tr>
 <tr>
 <td><code>a??</code></td>
-<td>6: &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, ''</td>
+<td>6: &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, '&rsquo;</td>
 </tr>
 <tr>
 <td><code>a{2}</code></td>
@@ -1117,11 +1117,11 @@ many <em>a</em>s as it can and never gives any of them back.</p>
 </tr>
 <tr>
 <td><code>a{,2}</code></td>
-<td>5: a, &lsquo;&rsquo;, aa, &lsquo;&rsquo;, ''</td>
+<td>5: a, &lsquo;&rsquo;, aa, &lsquo;&rsquo;, '&rsquo;</td>
 </tr>
 <tr>
 <td><code>a{,2}?</code></td>
-<td>6: &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, ''</td>
+<td>6: &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, &lsquo;&rsquo;, '&rsquo;</td>
 </tr>
 <tr>
 <td><code>a{1,}</code></td>
@@ -1680,7 +1680,7 @@ quantifier contains the last matched iteration.</p>
 <li>
 <p><code>(\b[\w']++\b) \b\1\b</code>. Discussion: If we don&rsquo;t use word boundaries we&rsquo;d
 also match the <em>s</em>s in <em>was some</em> and <em>great</em> in <em>great greatness</em>, and
-without allowing for <em>'</em> we&rsquo;d miss the repetition of <em>wasn&rsquo;t</em>. Adding a
+without allowing for <em>&rsquo;</em> we&rsquo;d miss the repetition of <em>wasn&rsquo;t</em>. Adding a
 possessive quantifier avoids unnecessary backtracking, which we never want
 here, as we always want to capture full words only.</p>
 </li>
@@ -2057,7 +2057,7 @@ with readability.)</li>
 <td>Intersection</td>
 <td><code>r'[\W]&amp;&amp;[\S]]'</code></td>
 <td><em>a.k$_8</em></td>
-<td><em>['.', &lsquo;$']</em></td>
+<td><em>[&rsquo;.&rsquo;, &lsquo;$&rsquo;]</em></td>
 </tr>
 <tr>
 <td>Union</td>
@@ -2238,17 +2238,17 @@ multiples of <em>n</em>.</p>
 <li>Match all strings inside quotation marks in the below block.</li>
 </ul>
 <p>These are &lsquo;string one&rsquo; and &lsquo;string
-two&rsquo; and &lsquo;that&rsquo;s string three&rsquo;.</p>
+two&rsquo; and &rsquo;that&rsquo;s string three&rsquo;.</p>
 <p>Thus far (with global flag/<code>findall()</code>):</p>
 <ul>
-<li>&lsquo;.*&rsquo; Doesn&rsquo;t work because * is greedy and matches &lsquo;string one&rsquo; and ' and
+<li>&lsquo;.*&rsquo; Doesn&rsquo;t work because * is greedy and matches &lsquo;string one&rsquo; and &rsquo; and
 similar match on second line.</li>
 <li>&lsquo;.*?&rsquo; Doesn&rsquo;t match string two since . doesn&rsquo;t match line-breaks and get&rsquo;s
 mixed up on second line.</li>
-<li>[^'\v]+ Behaves as the above</li>
-<li>[^']+ Now matches second string but including the linebreak, which we don&rsquo;t
+<li>[^&rsquo;\v]+ Behaves as the above</li>
+<li>[^&rsquo;]+ Now matches second string but including the linebreak, which we don&rsquo;t
 want as part of the match, and still gets tripped up by that&rsquo;s.</li>
-<li>Wanted: match string two but then exclude \v from match, ignore ' that are
+<li>Wanted: match string two but then exclude \v from match, ignore &rsquo; that are
 part of a word.</li>
 </ul>
 <h2 id="resources">Resources</h2>
@@ -2334,7 +2334,7 @@ resource</a></p>
 
   
   <p class="powered-by copyright-license-text">
-    © 2022 Fabian Gunzinger
+    © 2023 Fabian Gunzinger
   </p>
   
 
@@ -2363,7 +2363,7 @@ resource</a></p>
       
 
     
-    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+    <script src="/js/vendor-bundle.min.9592335d574f7a97010f99b90ad0f310.js"></script>
 
     
     
@@ -2445,7 +2445,7 @@ resource</a></p>
 
     
     
-      <script src="/js/wowchemy-headroom.79343bd00de25e04f03b6af2819f8643.js" type="module"></script>
+      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
     
     
     
@@ -2457,7 +2457,7 @@ resource</a></p>
       
     
     
-    <script src="/en/js/wowchemy.min.f41ee09ba84b78e6bdd68fadc655c33f.js"></script>
+    <script src="/en/js/wowchemy.min.df578bcc2e7fa600fcfe490e187ce35e.js"></script>
 
     
     

@@ -5,12 +5,26 @@
     <link>https://fabiangunzinger.github.io/tag/python/</link>
       <atom:link href="https://fabiangunzinger.github.io/tag/python/index.xml" rel="self" type="application/rss+xml" />
     <description>python</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 11 Dec 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://fabiangunzinger.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>python</title>
       <link>https://fabiangunzinger.github.io/tag/python/</link>
     </image>
+    
+    <item>
+      <title>Pandas dates and times</title>
+      <link>https://fabiangunzinger.github.io/post/python-dates-and-times/</link>
+      <pubDate>Sun, 11 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://fabiangunzinger.github.io/post/python-dates-and-times/</guid>
+      <description> &lt;iframe
+       src=&#34;./pandas-dates-and-times.html&#34;
+       width=&#34;90%&#34;
+       height=&#34;4200px&#34;
+       style=&#34;border:none;&#34;&gt;
+ &lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Python dictionaries</title>
